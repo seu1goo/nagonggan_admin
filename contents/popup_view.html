@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="popup_view">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info">
+          <ul class="sub_menu">
+            <li>
+              <a href="./interior.html">인테리어 정보</a>
+            </li>
+            <li>
+              <a href="./event.html">이벤트</a>
+            </li>
+            <li class="on">
+              <a href="./popup.html">팝업</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <div class="title">
+            <button type="button" onclick="goBack()" class="btn_back">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <h2 id="container_title">팝업 수정</h2>
+          </div>
+
+          <div class="btn_area">
+            <a href="./popup.html" class="btn_gy">목록</a>
+            <a href="./popup.html" class="btn_bk" onclick="registration()"
+              >수정</a
+            >
+          </div>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- table -->
+          <table class="tbl_left">
+            <tbody>
+              <tr>
+                <th>제목</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="popup_title"
+                      value="나만의공간이 꾸밈비 쏜다!"
+                      required
+                      id="popup_title"
+                      class="input_lg"
+                    />
+                    <span
+                      >img 태그의 alt, title 에 해당되는 내용입니다. 배너에
+                      마우스를 오버하면 이미지의 설명이 나옵니다.</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>링크</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="popup_link"
+                      value="http://seu1goo.github.io/nagonggan/sub/news/event_view.html"
+                      id="popup_link"
+                      class="input_lg"
+                    />
+                    <span>배너 클릭시 이동하는 주소입니다.</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>접속기기</th>
+                <td>
+                  <select name="device_type" id="device_type" required>
+                    <option value="all" selected>PC/MO</option>
+                    <option value="pc">PC</option>
+                    <option value="mobile">MO</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>출력위치</th>
+                <td>
+                  <select name="popup_location" id="popup_location" required>
+                    <option value="main" selected>메인</option>
+                    <option value="interior">인테리어 시공</option>
+                    <option value="3dspace">3D공간</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>새창</th>
+                <td>
+                  <div class="flex_box">
+                    <select name="is_blank" id="is_blank" required>
+                      <option value="N">사용안함</option>
+                      <option value="Y" selected>사용</option>
+                    </select>
+                    <span>배너 클릭시 새창을 띄울지를 설정합니다.</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>상태</th>
+                <td>
+                  <select name="use_yn" id="use_yn" required>
+                    <option value="Y" selected>활성화</option>
+                    <option value="N">비활성화</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>출력순서</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="diplay_seq"
+                      value="1"
+                      id="diplay_seq"
+                      required
+                    />
+                    <span
+                      >배너를 출력할 때 순서를 정합니다. 숫자가 작을수록 먼저
+                      출력됩니다.(ex.0~100)</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>노출일자</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="fromDate"
+                      id="fromDate"
+                      value="2022-11-01"
+                      class="date"
+                      autocomplete="off"
+                    />
+                    <span class="wave">~</span>
+                    <input
+                      type="text"
+                      name="toDate"
+                      id="toDate"
+                      value="2022-11-30"
+                      class="date"
+                      autocomplete="off"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>PC 이미지</th>
+                <td>
+                  <input
+                    type="file"
+                    name="upload_file_0"
+                    id="upload_file_0"
+                    onchange="imgPrivew(this,$('#preview_img'))"
+                  />
+                  <figure>
+                    <img src="../img/3d_interior_popup.png" id="preview_img" />
+                  </figure>
+                </td>
+              </tr>
+              <tr>
+                <th>MO 이미지</th>
+                <td>
+                  <input
+                    type="file"
+                    name="upload_file_1"
+                    id="upload_file_1"
+                    onchange="imgPrivew(this,$('#preview_img2'))"
+                  />
+                  <figure>
+                    <img src="../img/3d_interior_popup.png" id="preview_img2" />
+                  </figure>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

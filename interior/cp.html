@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="cp_list">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">공사 계약/진행건</h2>
+          <ul id="page_top_sub" class="contract_top">
+            <li>
+              <a href="./status.html" title="고객문의">고객문의</a>
+            </li>
+            <li>
+              <a href="./result.html">업체발주</a>
+            </li>
+            <li class="on">
+              <a href="./cp.html">공사 계약/진행건</a>
+            </li>
+            <li>
+              <a href="./contract.html">시공사 결제</a>
+            </li>
+            <li>
+              <a href="./partner.html">시공사 DB</a>
+            </li>
+            <li>
+              <a href="./partnership.html">시공업체 제휴현황</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">포트폴리오 관리</a>
+            </li>
+            <li>
+              <a href="./progress.html">실시간현황 관리</a>
+            </li>
+            <li>
+              <a href="./photo.html">포폴 등록현황</a>
+            </li>
+            <li>
+              <a href="./second.html">3초 견적</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter -->
+          <div class="filter">
+            <div class="btn_ov">
+              <span class="ov_txt">전체</span>
+              <span class="ov_num">3건</span>
+            </div>
+            <form name="search_form" id="search_form" class="search_form">
+              <select name="space_category_code" id="space_category_code">
+                <option value="">분류 전체</option>
+                <optgroup label="주거">
+                  <option value="아파트">아파트</option>
+                  <option value="빌라">빌라</option>
+                  <option value="주택">주택</option>
+                  <option value="오피스텔 / 원룸">오피스텔 / 원룸</option>
+                </optgroup>
+                <optgroup></optgroup>
+                <optgroup label="상업">
+                  <option value="요식업">요식업</option>
+                  <option value="카페">카페</option>
+                  <option value="숙박">숙박</option>
+                  <option value="상가">상가</option>
+                  <option value="오피스">오피스</option>
+                  <option value="교육">교육</option>
+                  <option value="문화">문화</option>
+                  <option value="뷰티">뷰티</option>
+                  <option value="여가">여가</option>
+                  <option value="체육">체육</option>
+                  <option value="프랜차이즈">프랜차이즈</option>
+                  <option value="메디컬">메디컬</option>
+                  <option value="기타">기타</option>
+                </optgroup>
+                <optgroup></optgroup>
+                <optgroup label="한분야">
+                  <option value="도배">도배</option>
+                  <option value="장판">장판</option>
+                  <option value="마루">마루</option>
+                  <option value="주방">주방</option>
+                  <option value="욕실">욕실</option>
+                  <option value="타일">타일</option>
+                  <option value="방문">방문</option>
+                  <option value="중문">중문</option>
+                  <option value="샷시">샷시</option>
+                  <option value="필름">필름</option>
+                  <option value="몰딩">몰딩</option>
+                </optgroup>
+              </select>
+              <select name="construct_zone" id="construct_zone">
+                <option value="">전지역</option>
+                <option value="서울/경기/인천">서울/경기/인천</option>
+                <option value="대전/세종/충청">대전/세종/충청</option>
+                <option value="부산/대구/경상">부산/대구/경상</option>
+                <option value="광주/목포/전라">광주/목포/전라</option>
+                <option value="강원/제주">강원/제주</option>
+              </select>
+              <select name="customer_eval" id="customer_eval">
+                <option value="">고객평가</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+              </select>
+              <select name="place_eval" id="place_eval">
+                <option value="">현장평가</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+              </select>
+              <input
+                type="text"
+                name="fromDate"
+                id="fromDate"
+                value="2022-11-01"
+                class="date"
+                autocomplete="off"
+              />
+              <span class="wave">~</span>
+              <input
+                type="text"
+                name="toDate"
+                id="toDate"
+                value="2022-11-30"
+                class="date"
+                autocomplete="off"
+              />
+              <fieldset id="hd_sch">
+                <input
+                  type="text"
+                  name="user_name"
+                  id="sch_stx"
+                  value=""
+                  maxlength="20"
+                  placeholder="고객명/시공사명을 입력해주세요."
+                />
+                <button
+                  type="submit"
+                  id="sch_submit"
+                  class="btn_search"
+                  value="검색"
+                >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- // filter -->
+
+          <!-- table -->
+          <div class="form_scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th class="column_sort">No.</th>
+                  <th class="column_sort">계약일</th>
+                  <th>시공사</th>
+                  <th>시공기간</th>
+                  <th>분류</th>
+                  <th>주소</th>
+                  <th>대표자 연락처</th>
+                  <th>등급</th>
+                  <th class="column_sort">계약공사액</th>
+                  <th class="column_sort">추가공사액</th>
+                  <th class="column_sort">계약금</th>
+                  <th class="column_sort">1차 중도금</th>
+                  <th class="column_sort">2차 중도금</th>
+                  <th class="column_sort">3차 중도금</th>
+                  <th class="column_sort">잔금</th>
+                  <th>고객명</th>
+                  <th>고객 연락처</th>
+                  <th class="column_sort">고객평가</th>
+                  <th class="column_sort">현장평가</th>
+                  <th>진행상황</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03</td>
+                  <td>2023-01-03</td>
+                  <td>시공사</td>
+                  <td>2023-02-04 ~ 2023-02-05</td>
+                  <td>아파트</td>
+                  <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+                  <td>010-1234-5678</td>
+                  <td>없음</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>가나다</td>
+                  <td>010-1234-5678</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button
+                      class="open_cp btn_purple_light"
+                      onclick="open_cpView()"
+                    >
+                      보기
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>01</td>
+                  <td>2023-01-03</td>
+                  <td>시공사</td>
+                  <td>2023-02-04 ~ 2023-02-05</td>
+                  <td>아파트</td>
+                  <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+                  <td>010-1234-5678</td>
+                  <td>없음</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>가나다</td>
+                  <td>010-1234-5678</td>
+                  <td>A</td>
+                  <td>A</td>
+                  <td>
+                    <button
+                      class="open_cp btn_purple_light"
+                      onclick="open_cpView()"
+                    >
+                      보기
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>2023-01-03</td>
+                  <td>시공사</td>
+                  <td>2023-02-04 ~ 2023-02-05</td>
+                  <td>아파트</td>
+                  <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+                  <td>010-1234-5678</td>
+                  <td>없음</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>70,000,000</td>
+                  <td>가나다</td>
+                  <td>010-1234-5678</td>
+                  <td>A</td>
+                  <td>A</td>
+                  <td>
+                    <button
+                      class="open_cp btn_purple_light"
+                      onclick="open_cpView()"
+                    >
+                      보기
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- // table -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- pop_progress -->
+    <div class="pop_wrap pop_progress">
+      <div class="pop_container">
+        <form id="cp_form">
+          <div class="pop_header">
+            <h3 class="pop_title">진행상황</h3>
+            <button class="pp_close_btn pop_close" onclick="close_cpView();">
+              <img src="../img/ico_close.png" alt="closeBtn" />
+            </button>
+          </div>
+          <div class="cp_wrap">
+            <div class="pop_contents pp_cont">
+              <div class="pp_box">
+                <table class="tbl_left">
+                  <tr>
+                    <th>공사완료여부</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="checkbox"
+                          name="final_yn"
+                          value="Y"
+                          id="final_yn"
+                        />
+                        <label for="final_yn">공사완료</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>계약날짜</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="contract_date"
+                        id="contract_date"
+                        value=""
+                        class="date"
+                        autocomplete="off"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>시공기간</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="construct_s_date"
+                          id="construct_s_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <span class="wave">-</span>
+                        <input
+                          type="text"
+                          name="construct_e_date"
+                          id="construct_e_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>계약공사액</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          value=""
+                          name="contract_construct_amount"
+                          id="contract_construct_amount"
+                          maxlength="20"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>추가공사액</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="add_construct_amount_pay_date"
+                          id="add_construct_amount_pay_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <input
+                          type="text"
+                          name="add_construct_amount"
+                          id="add_construct_amount"
+                          value=""
+                          maxlength="20"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>계약금</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="contract_amount_pay_date"
+                          id="contract_amount_pay_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <input
+                          type="text"
+                          name="contract_amount"
+                          id="contract_amount"
+                          value=""
+                          maxlength="20"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>1차 중도금</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="part_pay_1st_date"
+                          id="part_pay_1st_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <input
+                          type="text"
+                          name="part_pay_1st"
+                          id="part_pay_1st"
+                          value=""
+                          maxlength="20"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>2차 중도금</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="part_pay_2st_date"
+                          id="part_pay_2st_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <input
+                          type="text"
+                          name="part_pay_2st"
+                          id="part_pay_2st"
+                          value=""
+                          maxlength="20"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>3차 중도금</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="part_pay_3st_date"
+                          id="part_pay_3st_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <input
+                          type="text"
+                          name="part_pay_3st"
+                          id="part_pay_3st"
+                          value=""
+                          maxlength="11"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>잔금</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="part_pay_last_date"
+                          id="part_pay_last_date"
+                          value=""
+                          class="date"
+                          autocomplete="off"
+                        />
+                        <input
+                          type="text"
+                          name="part_pay_last"
+                          id="part_pay_last"
+                          value=""
+                          maxlength="20"
+                        />
+                        <p>원</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="pop_contents pp_cont">
+              <h1 class="pop_title">공사진행과정</h1>
+              <div class="pp_box">
+                <table class="tbl_left">
+                  <tr>
+                    <th>초기</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="st1_memo"
+                        id="st1_memo"
+                        value=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>중기</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="st2_memo"
+                        id="st2_memo"
+                        value=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>마무리</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="st3_memo"
+                        id="st3_memo"
+                        value=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>고객평가</th>
+                    <td>
+                      <select
+                        name="customer_satisfaction"
+                        id="customer_satisfaction"
+                      >
+                        <option value="">대기</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="S">우수시공사</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>현장평가</th>
+                    <td>
+                      <select name="place_satisfaction" id="place_satisfaction">
+                        <option value="">대기</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="S">우수시공사</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="th_top">자료다운받기</th>
+                    <td>
+                      <div class="flex_box">
+                        <h3>[견적서 다운로드]</h3>
+                        <a href="javascript:void(0);" class="btn_underline"
+                          >견적서</a
+                        >
+                      </div>
+                      <div class="flex_box">
+                        <h3>[계약서 다운로드]</h3>
+                        <a href="javascript:void(0);" class="btn_underline"
+                          >계약서</a
+                        >
+                      </div>
+                      <div class="flex_box">
+                        <h3>[공정표 다운로드]</h3>
+                        <a href="javascript:void(0);" class="btn_underline"
+                          >공정표</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="pop_footer">
+            <button type="button" class="btn_bk">수정</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- // pop_progress -->
+  </body>
+</html>

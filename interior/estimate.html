@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="estimate_view">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li class="on">
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li>
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <div class="title">
+            <button type="button" onclick="goBack()" class="btn_back">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <h2 id="container_title">견적문의</h2>
+          </div>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- table -->
+          <table class="tbl_left">
+            <tbody>
+              <tr>
+                <th>분류</th>
+                <td>[주거] 아파트</td>
+              </tr>
+              <tr>
+                <th>지역</th>
+                <td>서울/경기/인천</td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+              </tr>
+              <tr>
+                <th>평수</th>
+                <td>40평</td>
+              </tr>
+              <tr>
+                <th>유형</th>
+                <td>종합</td>
+              </tr>
+              <tr>
+                <th>공사 예정일</th>
+                <td>2주이내</td>
+              </tr>
+              <tr>
+                <th>고객명</th>
+                <td>가나다</td>
+              </tr>
+              <tr>
+                <th>고객 연락처</th>
+                <td>010-1234-5678</td>
+              </tr>
+              <tr>
+                <th>희망상담시간</th>
+                <td>상관없음</td>
+              </tr>
+              <tr>
+                <th>요구사항</th>
+                <td>빠른 연락 부탁드립니다.</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+
+          <!-- consulting_detail -->
+          <a href="javascript:doDisplay();" class="consulting_btn"></a>
+          <div id="consulting_detail" class="consulting_text">
+            <form
+              id="form1"
+              name="form1"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <div class="title">
+                <h3>상담내용</h3>
+                <button
+                  type="button"
+                  value="인쇄"
+                  class="btn_gy btn_print"
+                  onclick="printArea();"
+                >
+                  인쇄
+                </button>
+              </div>
+
+              <div class="tb_wrap">
+                <table class="tbl_left">
+                  <tr>
+                    <th>분류</th>
+                    <td>
+                      <select
+                        name="space_category_code"
+                        id="space_category_code"
+                      >
+                        <option value="">분류 전체</option>
+                        <optgroup label="주거">
+                          <option value="아파트" selected>아파트</option>
+                          <option value="빌라">빌라</option>
+                          <option value="주택">주택</option>
+                          <option value="오피스텔 / 원룸">
+                            오피스텔 / 원룸
+                          </option>
+                        </optgroup>
+                        <optgroup></optgroup>
+                        <optgroup label="상업">
+                          <option value="요식업">요식업</option>
+                          <option value="카페">카페</option>
+                          <option value="숙박">숙박</option>
+                          <option value="상가">상가</option>
+                          <option value="오피스">오피스</option>
+                          <option value="교육">교육</option>
+                          <option value="문화">문화</option>
+                          <option value="뷰티">뷰티</option>
+                          <option value="여가">여가</option>
+                          <option value="체육">체육</option>
+                          <option value="프랜차이즈">프랜차이즈</option>
+                          <option value="메디컬">메디컬</option>
+                          <option value="기타">기타</option>
+                        </optgroup>
+                        <optgroup></optgroup>
+                        <optgroup label="한분야">
+                          <option value="도배">도배</option>
+                          <option value="장판">장판</option>
+                          <option value="마루">마루</option>
+                          <option value="주방">주방</option>
+                          <option value="욕실">욕실</option>
+                          <option value="타일">타일</option>
+                          <option value="방문">방문</option>
+                          <option value="중문">중문</option>
+                          <option value="샷시">샷시</option>
+                          <option value="필름">필름</option>
+                          <option value="몰딩">몰딩</option>
+                        </optgroup>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>지역</th>
+                    <td>
+                      <select name="construct_zone" id="construct_zone">
+                        <option value="">지역</option>
+                        <option value="서울/경기/인천" selected>
+                          서울/경기/인천
+                        </option>
+                        <option value="대전/세종/충청">대전/세종/충청</option>
+                        <option value="부산/대구/경상">부산/대구/경상</option>
+                        <option value="광주/목포/전라">광주/목포/전라</option>
+                        <option value="강원/제주">강원/제주</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>주소</th>
+                    <td class="td_addr">
+                      <input
+                        type="text"
+                        name="construct_address"
+                        value="인천 계양구 봉오대로677번길 6-8 "
+                        placeholder="기본주소를 입력해주세요."
+                        id="construct_address"
+                        class="input_addr"
+                      />
+                      <input
+                        type="text"
+                        name="construct_add_detail"
+                        value="1층"
+                        placeholder="상세주소를 입력해주세요."
+                        id="construct_add_detail"
+                        class="input_addr"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>평수</th>
+                    <td>
+                      <div class="flex_box">
+                        <input
+                          type="text"
+                          name="construct_space"
+                          value="40"
+                          id="construct_space"
+                        />
+                        <p>평</p>
+                        <span>(숫자만 입력해주세요)</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>유형</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="construct_type"
+                        value="종합"
+                        id="construct_type"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>환경</th>
+                    <td>
+                      <select
+                        name="construct_conditions"
+                        id="construct_conditions"
+                      >
+                        <option value="비워있음">비워있음</option>
+                        <option value="살고있음" selected>살고있음</option>
+                        <option value="신규 오픈">신규 오픈</option>
+                        <option value="운영 중 부분공사">
+                          운영 중 부분공사
+                        </option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>공사 예정일</th>
+                    <td>
+                      <select name="construct_schedule" id="construct_schedule">
+                        <option value="2주이내" selected>2주이내</option>
+                        <option value="1달이내">1달이내</option>
+                        <option value="2달이내">2달이내</option>
+                        <option value="2달이후">2달이후</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>예산</th>
+                    <td>
+                      <select name="budget" id="budget">
+                        <option value="미정">미정</option>
+                        <option value="3백이하">3백이하</option>
+                        <option value="3백~1천">3백~1천</option>
+                        <option value="1천~2천">1천~2천</option>
+                        <option value="2천~3천">2천~3천</option>
+                        <option value="3천~4천">3천~4천</option>
+                        <option value="4천~5천">4천~5천</option>
+                        <option value="5천~6천">5천~6천</option>
+                        <option value="6천~7천">6천~7천</option>
+                        <option value="7천~8천">7천~8천</option>
+                        <option value="8천~1억">8천~1억</option>
+                        <option value="1억~2억">1억~2억</option>
+                        <option value="2억~3억">2억~3억</option>
+                        <option value="3억이상">3억이상</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>고객명</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="estimate_user_name"
+                        value="가나다"
+                        id="estimate_user_name"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>고객 연락처</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="estimate_user_phone"
+                        value="010-1234-5678"
+                        id="estimate_user_phone"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>희망상담시간 (시공사)</th>
+                    <td>
+                      <select name="available_time" id="available_time">
+                        <option value="">선택하세요</option>
+                        <option value="오전 (08시~12시)">
+                          오전 (08시~12시)
+                        </option>
+                        <option value="오후 (12시~18시)">
+                          오후 (12시~18시)
+                        </option>
+                        <option value="야간 (18시~08시)">
+                          야간 (18시~08시)
+                        </option>
+                        <option value="상관없음" selected>상관없음</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <th>가족 구성도</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="family_member"
+                        value=""
+                        id="family_member"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>요구 사항</th>
+                    <td>
+                      <textarea
+                        name="estimate_user_order"
+                        id="estimate_user_order"
+                      >
+빠른 연락 부탁드립니다.</textarea
+                      >
+                    </td>
+                  </tr>
+                </table>
+                <button
+                  type="button"
+                  value="단순문의"
+                  id="noprint_btn"
+                  class="btn_gy"
+                  accesskey="s"
+                >
+                  단순문의
+                </button>
+                <button
+                  type="button"
+                  value="발주의뢰"
+                  id="noprint_btn"
+                  class="btn_bk"
+                  accesskey="s"
+                >
+                  발주의뢰
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- // consulting_detail -->
+
+          <!-- concept -->
+          <div class="interior_view">
+            <!-- view_main -->
+            <section class="view_main">
+              <h2>따뜻한 감성의 우드, 블랙 포인트 인테리어 디자인</h2>
+              <ul class="tag_view">
+                <li><a href="javascript:void(0);">#주택</a></li>
+                <li><a href="javascript:void(0);">#내츄럴</a></li>
+                <li><a href="javascript:void(0);">#원목</a></li>
+                <li><a href="javascript:void(0);">#미니멀</a></li>
+              </ul>
+              <h5>
+                <img src="../img/ico_location.png" alt="주소" />
+                <span>인천 청라 주디아파트</span>
+              </h5>
+              <figure class="visual">
+                <img src="../img/img_interior_thum.png" />
+                <button type="button" class="bookmark">
+                  <img src="../img/ico_bookmark_off.png" alt="스크랩" />
+                </button>
+              </figure>
+              <div class="info_detail">
+                <ul>
+                  <li>
+                    <h4><span>공사구분</span>주택</h4>
+                  </li>
+                  <li>
+                    <h4><span>공사기간</span>3개월</h4>
+                  </li>
+                  <li>
+                    <h4><span>공사면적</span>52평형</h4>
+                  </li>
+                  <li>
+                    <h4><span>공사금액</span>1억 2천만원</h4>
+                  </li>
+                </ul>
+                <div class="info_concept">
+                  <div class="company">
+                    <figure>
+                      <img src="../img/img_company_logo.png" />
+                    </figure>
+                    <div class="brand_info">
+                      <h5>레몬인테리어</h5>
+                      <h6>경기도 성남시 분당구 서판교로</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- // view_main -->
+
+            <!-- view_detail -->
+            <section class="view_detail">
+              <div class="space">
+                <div class="photo_cate">
+                  <h3>거실</h3>
+                  <div class="photo_area">
+                    <figure>
+                      <img src="../img/img_interior_living.png" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- // view_detail -->
+          </div>
+          <!-- // concept -->
+        </div>
+
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

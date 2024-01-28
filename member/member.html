@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="member_list">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info">
+          <div class="user_num">
+            <dl>
+              <dt><span>전체</span> 회원 수</dt>
+              <dd><b>220</b> 명</dd>
+            </dl>
+            <dl>
+              <dt><span>신규</span> 회원 수</dt>
+              <dd><b>15</b> 명</dd>
+            </dl>
+            <dl>
+              <dt><span>오늘</span> 접속자 수</dt>
+              <dd><b>58</b> 명</dd>
+            </dl>
+          </div>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">회원정보</h2>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter -->
+          <div class="filter">
+            <div class="btn_ov">
+              <span class="ov_txt">전체</span>
+              <span class="ov_num">3건</span>
+            </div>
+            <form name="search_form">
+              <fieldset id="hd_sch">
+                <select name="sch_type" id="sch_type">
+                  <option value="all" selected>전체</option>
+                  <option value="m_email">이메일</option>
+                  <option value="m_phone">휴대폰</option>
+                  <option value="m_nick">닉네임</option>
+                </select>
+                <input
+                  type="text"
+                  name="stx"
+                  id="stx"
+                  value=""
+                  maxlength="20"
+                  placeholder="검색어를 입력해주세요"
+                />
+                <button
+                  type="submit"
+                  value="검색"
+                  id="sch_submit"
+                  class="btn_search"
+                >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- // filter -->
+
+          <!-- table -->
+          <table>
+            <colgroup>
+              <col width="4%" />
+              <col width="8%" />
+              <col width="" />
+              <col width="10%" />
+              <col width="6%" />
+              <col width="10%" />
+              <col width="6%" />
+              <col width="8%" />
+              <col width="15%" / >
+            </colgroup>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>가입날짜</th>
+                <th>회원계정</th>
+                <th>닉네임</th>
+                <th>성별</th>
+                <th>휴대번호</th>
+                <th>SNS</th>
+                <th>최근접속</th>
+                <th>회원상태설정</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>03</td>
+                <td>2023-01-31</td>
+                <td>abc123@abc.co.kr</td>
+                <td>나만의공간_8R0W22MV</td>
+                <td>남</td>
+                <td>010-1234-5678</td>
+                <td>유 (google)</td>
+                <td>2023-01-31</td>
+                <td>
+                  <select name="m_status" id="m_status_3">
+                    <option value="1" selected>활성</option>
+                    <option value="2">비활성</option>
+                    <option value="99">탈퇴</option>
+                  </select>
+                  <button class="btn_purple_light">저장</button>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>2023-01-31</td>
+                <td>abc123@abc.co.kr</td>
+                <td>나만의공간_8R0W22MV</td>
+                <td>남</td>
+                <td>010-1234-5678</td>
+                <td>유 (google)</td>
+                <td>2023-01-31</td>
+                <td>
+                  <select name="m_status" id="m_status_2">
+                    <option value="1" selected>활성</option>
+                    <option value="2">비활성</option>
+                    <option value="99">탈퇴</option>
+                  </select>
+                  <button class="btn_purple_light">저장</button>
+                </td>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>2023-01-31</td>
+                <td>abc123@abc.co.kr</td>
+                <td>나만의공간_8R0W22MV</td>
+                <td>남</td>
+                <td>010-1234-5678</td>
+                <td>유 (google)</td>
+                <td>2023-01-31</td>
+                <td>
+                  <select name="m_status" id="m_status_1">
+                    <option value="1" selected>활성</option>
+                    <option value="2">비활성</option>
+                    <option value="99">탈퇴</option>
+                  </select>
+                  <button class="btn_purple_light">저장</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

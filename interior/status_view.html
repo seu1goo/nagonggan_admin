@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="status_view">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">고객문의 발주</h2>
+          <ul id="page_top_sub" class="contract_top">
+            <li class="on">
+              <a href="./status.html" title="고객문의">고객문의</a>
+            </li>
+            <li>
+              <a href="./result.html">업체발주</a>
+            </li>
+            <li>
+              <a href="./cp.html">공사 계약/진행건</a>
+            </li>
+            <li>
+              <a href="./contract.html">시공사 결제</a>
+            </li>
+            <li>
+              <a href="./partner.html">시공사 DB</a>
+            </li>
+            <li>
+              <a href="./partnership.html">시공업체 제휴현황</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">포트폴리오 관리</a>
+            </li>
+            <li>
+              <a href="./progress.html">실시간현황 관리</a>
+            </li>
+            <li>
+              <a href="./photo.html">포폴 등록현황</a>
+            </li>
+            <li>
+              <a href="./second.html">3초 견적</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- btn_area -->
+          <div class="btn_area">
+            <a href="./status.html" class="btn_gy">목록</a>
+            <button
+              type="button"
+              value="발주완료"
+              accesskey="s"
+              onclick="complete_order();"
+              class="btn_bk"
+            >
+              발주완료
+            </button>
+          </div>
+          <!-- // btn_area -->
+
+          <!-- table -->
+          <table class="tbl_left">
+            <colgroup>
+              <col width="10%" />
+              <col width="" />
+              <col width="10%" />
+              <col width="" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>분류</th>
+                <td>아파트</td>
+                <th>지역</th>
+                <td>서울/경기/인천</td>
+                <th>주소</th>
+                <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+              </tr>
+              <tr>
+                <th>평수</th>
+                <td>40평</td>
+                <th>유형</th>
+                <td>주거</td>
+                <th>환경</th>
+                <td>살고있음</td>
+              </tr>
+              <tr>
+                <th>가족 구성도</th>
+                <td>4인</td>
+                <th>공사 예정일</th>
+                <td>2달 이내</td>
+                <th>희망 상담시간</th>
+                <td>오후 (12시 ~ 18시)</td>
+              </tr>
+              <tr>
+                <th>고객명</th>
+                <td>가나다</td>
+                <th>고객 연락처</th>
+                <td>010-1234-5678</td>
+                <th>예산</th>
+                <td>010-1234-5678</td>
+              </tr>
+              <tr>
+                <th>요구 사항</th>
+                <td colspan="3">빠른 연락 부탁드립니다.</td>
+                <th>예상 견적가 (예가)</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      id="temp_price"
+                      name="temp_price"
+                      autocomplete="off"
+                      value=""
+                      maxlength="12"
+                      placeholder="ex.10000"
+                    />
+                    <p>만원</p>
+                    <button
+                      type="button"
+                      value="저장"
+                      class="btn_purple_light"
+                      accesskey="s"
+                    >
+                      저장
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+
+          <!-- est_choice -->
+          <div class="est_choice">
+            <div class="est_breakdown">
+              <div class="est_counting_wrap">
+                <h4>업체선택수</h4>
+                <p class="ets_c_count" id="ets_c_count">1</p>
+              </div>
+              <div class="order_list_btn_wrap">
+                <h4>발주내역</h4>
+                <span class="btn_gy" id="search_recent_3days">최근 3일</span>
+              </div>
+            </div>
+
+            <div class="est_area">
+              <button
+                type="button"
+                class="es_btn btn_purple active"
+                onclick="chk_area_click(this, 'ALL');"
+              >
+                전체
+              </button>
+              <button
+                type="button"
+                class="es_btn btn_purple"
+                onclick="chk_area_click(this, '서울/경기/인천');"
+              >
+                서울/경기/인천
+              </button>
+              <button
+                type="button"
+                class="es_btn btn_purple"
+                onclick="chk_area_click(this, '대전/세종/충청');"
+              >
+                대전/세종/충청
+              </button>
+              <button
+                type="button"
+                class="es_btn btn_purple"
+                onclick="chk_area_click(this, '부산/대구/경상');"
+              >
+                부산/대구/경상
+              </button>
+              <button
+                type="button"
+                class="es_btn btn_purple"
+                onclick="chk_area_click(this, '광주/목포/전라');"
+              >
+                광주/목포/전라
+              </button>
+              <button
+                type="button"
+                class="es_btn btn_purple"
+                onclick="chk_area_click(this, '강원/제주');"
+              >
+                강원/제주
+              </button>
+            </div>
+          </div>
+          <!-- // est_choice -->
+
+          <form
+            id="form1"
+            name="form1"
+            method="post"
+            enctype="multipart/form-data"
+            onsubmit="return false"
+            ;
+          >
+            <input
+              type="hidden"
+              name="e_idx"
+              id="e_idx"
+              value="<?= $e_idx; ?>"
+            />
+
+            <!-- est_filter -->
+            <div class="filter est_filter">
+              <!-- est_select -->
+              <div class="est_select">
+                <div class="living_box">
+                  <button class="lb_select" onclick="viewSelPop(this);">
+                    <span>선택</span>
+                    <img src="../img/ico_triangle.png" alt="선택" />
+                  </button>
+                  <div class="lb_cont">
+                    <div class="lbc_title">
+                      <button class="lb_all_sel" onclick="selAll(this);">
+                        전체선택
+                      </button>
+                      <button class="lb_close_btn" onclick="closeAll(this);">
+                        <img src="../img/ico_close.png" alt="닫기" />
+                      </button>
+                    </div>
+                    <div class="lbc_box">
+                      <h4>분류</h4>
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="11000"
+                        /><span>주거공간</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="12000"
+                        /><span>상업공간</span></label
+                      >
+                    </div>
+                    <div class="lbc_box">
+                      <h4>분야별 인테리어</h4>
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21100"
+                        /><span>도배</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21200"
+                        /><span>장판</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21300"
+                        /><span>마루</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21400"
+                        /><span>주방</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21500"
+                        /><span>욕실</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21600"
+                        /><span>방문</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21700"
+                        /><span>중문</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21800"
+                        /><span>샷시</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="21900"
+                        /><span>필름</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="22000"
+                        /><span>몰딩</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="business_scope"
+                          id="business_scope"
+                          value="22100"
+                        /><span>기타</span></label
+                      >
+                    </div>
+                    <div class="lbc_btn">
+                      <button
+                        type="button"
+                        onclick="resetFin();"
+                        class="btn_gy_dark"
+                      >
+                        초기화
+                      </button>
+                      <button
+                        type="button"
+                        onclick="selectFin();"
+                        class="btn_bk"
+                      >
+                        적용
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // living_box -->
+
+                <select name="company_grade" id="company_grade">
+                  <option value="">전체</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="S">우수시공사</option>
+                </select>
+              </div>
+              <!-- // est_select -->
+
+              <!-- est_search_box -->
+              <div class="est_search_box">
+                <fieldset id="hd_sch">
+                  <input
+                    type="text"
+                    name="fromDate"
+                    id="fromDate"
+                    value=""
+                    class="date"
+                    autocomplete="off"
+                  />
+                  <span class="wave">-</span>
+                  <input
+                    type="text"
+                    name="toDate"
+                    id="toDate"
+                    value=""
+                    class="date"
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    name="search_keyword"
+                    id="sch_stx"
+                    maxlength="20"
+                    placeholder="시공사를 입력해주세요"
+                  />
+                  <button
+                    type="button"
+                    id="sch_submit"
+                    class="btn_search"
+                    value="검색"
+                  >
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </fieldset>
+              </div>
+              <!--// est_search_box -->
+            </div>
+            <!-- // est_filter -->
+          </form>
+
+          <!-- // est_list -->
+          <section class="est_list">
+            <!-- partner_candidate_list -->
+            <div id="partner_candidate_list">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="column_sort">No.</th>
+                    <th class="column_sort">가입일</th>
+                    <th>시공사</th>
+                    <th>결제</th>
+                    <th>ID</th>
+                    <th>공사범위</th>
+                    <th>지역</th>
+                    <th>주소</th>
+                    <th>대표자</th>
+                    <th>대표자 연락처</th>
+                    <th>회사 연락처</th>
+                    <th>홈페이지</th>
+                    <th class="column_sort">포폴 수</th>
+                    <th class="column_sort">견적(누)건</th>
+                    <th class="column_sort">계약(누)건</th>
+                    <th class="column_sort">계약률<span>(%)</span></th>
+                    <th class="column_sort">누적 시공액</th>
+                    <th class="column_sort">이달 견적건</th>
+                    <th class="column_sort">이달 계약건</th>
+                    <th>등급</th>
+                    <th>메모</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>03</td>
+                    <td>2022-01-05</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn_underline"
+                        >A인테리어</a
+                      >
+                    </td>
+                    <td>
+                      <button class="btn_underline" onclick="open_syView();">
+                        6개월
+                      </button>
+                    </td>
+                    <td>abc012</td>
+                    <td>인테리어</td>
+                    <td>서울/경기/인천</td>
+                    <td>인천 계양구 경명대로 1086</td>
+                    <td>가나다</td>
+                    <td>010-1234-5678</td>
+                    <td>032-1234-5678</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn_underline"
+                        >www.abc.co.kr</a
+                      >
+                    </td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>0%</td>
+                    <td>결제완료</td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>없음</td>
+                    <td>
+                      <button
+                        class="open_memo btn_purple_light"
+                        onclick="open_memo();"
+                      >
+                        메모
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>2022-01-05</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn_underline"
+                        >A인테리어</a
+                      >
+                    </td>
+                    <td>
+                      <button class="btn_underline" onclick="open_syView();">
+                        6개월
+                      </button>
+                    </td>
+                    <td>abc012</td>
+                    <td>인테리어</td>
+                    <td>서울/경기/인천</td>
+                    <td>인천 계양구 경명대로 1086</td>
+                    <td>가나다</td>
+                    <td>010-1234-5678</td>
+                    <td>032-1234-5678</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn_underline"
+                        >www.abc.co.kr</a
+                      >
+                    </td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>0%</td>
+                    <td>결제완료</td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>없음</td>
+                    <td>
+                      <button
+                        class="open_memo btn_purple_light"
+                        onclick="open_memo();"
+                      >
+                        메모
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>2022-01-05</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn_underline"
+                        >A인테리어</a
+                      >
+                    </td>
+                    <td>
+                      <button class="btn_underline" onclick="open_syView();">
+                        6개월
+                      </button>
+                    </td>
+                    <td>abc012</td>
+                    <td>인테리어</td>
+                    <td>서울/경기/인천</td>
+                    <td>인천 계양구 경명대로 1086</td>
+                    <td>가나다</td>
+                    <td>010-1234-5678</td>
+                    <td>032-1234-5678</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn_underline"
+                        >www.abc.co.kr</a
+                      >
+                    </td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>0%</td>
+                    <td>결제완료</td>
+                    <td>0건</td>
+                    <td>0건</td>
+                    <td>없음</td>
+                    <td>
+                      <button
+                        class="open_memo btn_purple_light"
+                        onclick="open_memo();"
+                      >
+                        메모
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- // partner_candidate_list -->
+          </section>
+          <!-- // est_list -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- pop_paysys -->
+    <div class="pop_wrap pop_paysys">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h2 class="pop_title">정액제</h2>
+          <button class="pop_close" onclick="close_syView(this);">
+            <img src="../img/ico_close.png" alt="closeBtn" />
+          </button>
+        </div>
+        <div class="pop_contents">
+          <table id="paysys_pop">
+            <tr>
+              <th>결제방법</th>
+              <th>상품종류</th>
+              <th>금액</th>
+              <th>이용기간</th>
+            </tr>
+            <tr>
+              <td>정액제</td>
+              <td>6개월</td>
+              <td>2,000,000</td>
+              <td>
+                2022.05.21 <br />
+                ~ <br />
+                진행중
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--// pop_paysys -->
+
+    <!-- pop_memo -->
+    <div class="pop_wrap pop_memo">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h3 class="pop_title">메모</h3>
+          <button class="pop_close" onclick="close_memo();">
+            <img src="../img/ico_close.png" alt="closeBtn" />
+          </button>
+        </div>
+        <div class="pop_contents mp_cont">
+          <div class="mp_memo_box">
+            <textarea
+              name="company_memo_content"
+              id="company_memo_content"
+            ></textarea>
+            <div class="mmb_btn_wrap">
+              <button
+                class="btn_bk"
+                onclick="reg_memo($('#memo_company_code').val());"
+              >
+                작성하기
+              </button>
+            </div>
+          </div>
+          <div class="mp_table_box" id="company_memo_list">
+            <table>
+              <tr>
+                <th>날짜</th>
+                <th>작성자</th>
+                <th>메모</th>
+                <th>전체내용</th>
+              </tr>
+              <tr>
+                <td>2023-02-08 11:11</td>
+                <td>abc123</td>
+                <td>
+                  <div class="simple_memo">내용</div>
+                  <div class="all_memo">
+                    <div class="am_box">
+                      <button
+                        type="button"
+                        class="am_close_btn"
+                        onclick="close_all_memo()"
+                      >
+                        <img src="../img/ico_close.png" alt="닫기" />
+                      </button>
+                      <p class="am_txt">상세내용</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button class="btn_purple_dark" onclick="open_all_memo(this)">
+                    상세보기
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // pop_memo -->
+  </body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="program program_myhouse">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info">
+          <ul class="sub_menu">
+            <li class="on">
+              <a href="./myhouse.html">내집꾸미기</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./erp.html">ERP 도면데이터</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">내집꾸미기</h2>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- version_new -->
+          <section class="verseion version_new">
+            <h3>신규 버전 업로드</h3>
+            <ul>
+              <li class="name">
+                <h4>버전명</h4>
+                <input type="text" placeholder="버전을 입력해주세요." />
+              </li>
+              <li class="upload">
+                <h4>파일 업로드</h4>
+                <input type="file" name="version_upload" id="version_upload" />
+              </li>
+              <!-- // 파일 업로드 시 노출 -->
+              <li class="file">
+                <h4>파일 확인</h4>
+                <div class="tb">
+                  <ul class="th">
+                    <li>업로드 폴더</li>
+                    <li>파일명</li>
+                    <li>업로더</li>
+                    <li>관리</li>
+                  </ul>
+                  <div class="td">
+                    <ul>
+                      <li>/myhouse/plan_unity/</li>
+                      <li>Unity</li>
+                      <li>abc</li>
+                      <li>
+                        <button type="button" class="btn_purple_light">
+                          삭제
+                        </button>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>/myhouse/plan_unity/</li>
+                      <li>Unity</li>
+                      <li>abc</li>
+                      <li>
+                        <button type="button" class="btn_purple_light">
+                          삭제
+                        </button>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>/myhouse/plan_unity/</li>
+                      <li>Unity</li>
+                      <li>abc</li>
+                      <li>
+                        <button type="button" class="btn_purple_light">
+                          삭제
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="memo">
+                <h4>메모 작성</h4>
+                <textarea name="new_memo" id="new_memo"></textarea>
+              </li>
+              <!-- // 파일 업로드 시 노출 -->
+            </ul>
+            <div class="btn_area">
+              <button type="button" class="btn_purple_ng">버전 저장</button>
+            </div>
+          </section>
+          <!-- // version_new -->
+
+          <!-- version_setting -->
+          <section class="verseion version_setting">
+            <h3>버전 설정</h3>
+            <ul>
+              <li class="now">
+                <h4>버전명</h4>
+                <p>1.0.0.1</p>
+              </li>
+              <li class="choice">
+                <h4>버전 선택</h4>
+                <div>
+                  <select name="choice_version" id="choice_version">
+                    <option value="1.0.0.1">1.0.0.1</option>
+                  </select>
+                  <button type="button" class="btn_gy">파일조회</button>
+                </div>
+              </li>
+              <!-- // 파일 업로드 시 노출 -->
+              <li class="file">
+                <h4>파일 확인</h4>
+                <div class="tb">
+                  <ul class="th">
+                    <li>업로드 폴더</li>
+                    <li>파일명</li>
+                    <li>업로더</li>
+                    <li>관리</li>
+                  </ul>
+                  <div class="td">
+                    <ul>
+                      <li>/myhouse/plan_unity/</li>
+                      <li>Unity</li>
+                      <li>abc</li>
+                      <li>
+                        <button type="button" class="btn_purple_light">
+                          삭제
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="memo">
+                <h4>메모 작성</h4>
+                <textarea name="setting_memo" id="setting_memo"></textarea>
+              </li>
+              <!-- // 파일 업로드 시 노출 -->
+            </ul>
+            <div class="btn_area">
+              <button type="button" class="btn_purple_ng">버전 적용</button>
+            </div>
+          </section>
+          <!-- // version_setting -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

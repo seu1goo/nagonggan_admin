@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="result_list">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">업체발주</h2>
+          <ul id="page_top_sub" class="contract_top">
+            <li>
+              <a href="./status.html" title="고객문의">고객문의</a>
+            </li>
+            <li class="on">
+              <a href="./result.html">업체발주</a>
+            </li>
+            <li>
+              <a href="./cp.html">공사 계약/진행건</a>
+            </li>
+            <li>
+              <a href="./contract.html">시공사 결제</a>
+            </li>
+            <li>
+              <a href="./partner.html">시공사 DB</a>
+            </li>
+            <li>
+              <a href="./partnership.html">시공업체 제휴현황</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">포트폴리오 관리</a>
+            </li>
+            <li>
+              <a href="./progress.html">실시간현황 관리</a>
+            </li>
+            <li>
+              <a href="./photo.html">포폴 등록현황</a>
+            </li>
+            <li>
+              <a href="./second.html">3초 견적</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter -->
+          <div class="filter">
+            <div class="btn_ov">
+              <span class="ov_txt">전체</span>
+              <span class="ov_num">3건</span>
+            </div>
+            <form name="search_form" id="search_form" class="search_form">
+              <select name="space_category_code" id="space_category_code">
+                <option value="">분류 전체</option>
+                <optgroup label="주거">
+                  <option value="아파트">아파트</option>
+                  <option value="빌라">빌라</option>
+                  <option value="주택">주택</option>
+                  <option value="오피스텔 / 원룸">오피스텔 / 원룸</option>
+                </optgroup>
+                <optgroup></optgroup>
+                <optgroup label="상업">
+                  <option value="요식업">요식업</option>
+                  <option value="카페">카페</option>
+                  <option value="숙박">숙박</option>
+                  <option value="상가">상가</option>
+                  <option value="오피스">오피스</option>
+                  <option value="교육">교육</option>
+                  <option value="문화">문화</option>
+                  <option value="뷰티">뷰티</option>
+                  <option value="여가">여가</option>
+                  <option value="체육">체육</option>
+                  <option value="프랜차이즈">프랜차이즈</option>
+                  <option value="메디컬">메디컬</option>
+                  <option value="기타">기타</option>
+                </optgroup>
+                <optgroup></optgroup>
+                <optgroup label="한분야">
+                  <option value="도배">도배</option>
+                  <option value="장판">장판</option>
+                  <option value="마루">마루</option>
+                  <option value="주방">주방</option>
+                  <option value="욕실">욕실</option>
+                  <option value="타일">타일</option>
+                  <option value="방문">방문</option>
+                  <option value="중문">중문</option>
+                  <option value="샷시">샷시</option>
+                  <option value="필름">필름</option>
+                  <option value="몰딩">몰딩</option>
+                </optgroup>
+              </select>
+              <select name="construct_zone" id="construct_zone">
+                <option value="">전지역</option>
+                <option value="서울/경기/인천">서울/경기/인천</option>
+                <option value="대전/세종/충청">대전/세종/충청</option>
+                <option value="부산/대구/경상">부산/대구/경상</option>
+                <option value="광주/목포/전라">광주/목포/전라</option>
+                <option value="강원/제주">강원/제주</option>
+              </select>
+              <input
+                type="text"
+                name="fromDate"
+                id="fromDate"
+                value="2022-11-01"
+                class="date"
+                autocomplete="off"
+              />
+              <span class="wave">~</span>
+              <input
+                type="text"
+                name="toDate"
+                id="toDate"
+                value="2022-11-30"
+                class="date"
+                autocomplete="off"
+              />
+              <fieldset id="hd_sch">
+                <input
+                  type="text"
+                  name="user_name"
+                  id="sch_stx"
+                  value=""
+                  maxlength="20"
+                  placeholder="고객명을 입력해주세요."
+                />
+                <button
+                  type="submit"
+                  id="sch_submit"
+                  class="btn_search"
+                  value="검색"
+                >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- // filter -->
+
+          <!-- table -->
+          <div class="form_scroll">
+            <table>
+              <colgroup>
+                <col width="2%" />
+                <col width="4%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="7%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="5%" />
+                <col width="4%" />
+                <col width="3%" />
+                <col width="5%" />
+                <col width="4%" />
+                <col width="7%" />
+                <col width="5%" />
+                <col width="7%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="5%" />
+                <col width="4%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="3%" />
+                <col width="4%" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">문의날짜</th>
+                  <th scope="col">문의시간</th>
+                  <th scope="col">고객명</th>
+                  <th scope="col">분류</th>
+                  <th scope="col">주소</th>
+                  <th scope="col">평수</th>
+                  <th scope="col">유형</th>
+                  <th scope="col">환경</th>
+                  <th scope="col">공사 예정일</th>
+                  <th scope="col">예산</th>
+                  <th scope="col">고객 연락처</th>
+                  <th scope="col">가족구성도</th>
+                  <th scope="col">요구사항</th>
+                  <th scope="col">시공사</th>
+                  <th scope="col">시공범위</th>
+                  <th scope="col">전문분야</th>
+                  <th scope="col">지역</th>
+                  <th scope="col">대표자</th>
+                  <th scope="col">대표자 연락처</th>
+                  <th scope="col">이달견적건</th>
+                  <th scope="col">등급</th>
+                  <th scope="col">결제</th>
+                  <th scope="col">계약금액</th>
+                  <th scope="col">계약여부</th>
+                  <th scope="col">소비자 미팅시간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03</td>
+                  <td>2023-01-03</td>
+                  <td>17:00</td>
+                  <td>가나다</td>
+                  <td>아파트</td>
+                  <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+                  <td>60평</td>
+                  <td>종합</td>
+                  <td>비워있음</td>
+                  <td>1달 이내</td>
+                  <td>7천 ~ 8천</td>
+                  <td>010-1234-5678</td>
+                  <td>4인</td>
+                  <td>빠른연락부탁드립니다.</td>
+                  <td>A 인테리어</td>
+                  <td>주거, 상업</td>
+                  <td>주거, 상업</td>
+                  <td>서울/경기/인천</td>
+                  <td>가나다</td>
+                  <td>010-1234-5678</td>
+                  <td>0건</td>
+                  <td>없음</td>
+                  <td>
+                    <button class="btn_underline" onclick="open_syView();">
+                      1개월
+                    </button>
+                  </td>
+                  <td>10,000,000</td>
+                  <td>
+                    <button
+                      class="btn_underline cont_ornot on"
+                      onclick="update_order_contract()"
+                    >
+                      미계약
+                    </button>
+                  </td>
+                  <td>
+                    <div class="flex_box">
+                      <select
+                        name="meet_month"
+                        id="meet_month"
+                        class="time_monthSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                      <p>월</p>
+                      <select name="meet_day" id="meet_day" class="time_daySel">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                      <p>일</p>
+                      <select
+                        name="meet_hou"
+                        id="meet_hour"
+                        class="time_hourSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                      </select>
+                      <p>시</p>
+                      <select
+                        name="meet_minute"
+                        id="meet_minute"
+                        class="time_minSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                      </select>
+                      <p>분</p>
+                      <button
+                        class="btn_purple_light"
+                        onclick="update_customer_meet_time()"
+                      >
+                        적용
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>2023-01-03</td>
+                  <td>17:00</td>
+                  <td>가나다</td>
+                  <td>아파트</td>
+                  <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+                  <td>60평</td>
+                  <td>종합</td>
+                  <td>비워있음</td>
+                  <td>1달 이내</td>
+                  <td>7천 ~ 8천</td>
+                  <td>010-1234-5678</td>
+                  <td>4인</td>
+                  <td>빠른연락부탁드립니다.</td>
+                  <td>A 인테리어</td>
+                  <td>주거, 상업</td>
+                  <td>주거, 상업</td>
+                  <td>서울/경기/인천</td>
+                  <td>가나다</td>
+                  <td>010-1234-5678</td>
+                  <td>0건</td>
+                  <td>없음</td>
+                  <td>
+                    <button class="btn_underline" onclick="open_syView();">
+                      1개월
+                    </button>
+                  </td>
+                  <td>10,000,000</td>
+                  <td>
+                    <button class="btn_underline cont_ornot">계약</button>
+                  </td>
+                  <td>
+                    <div class="flex_box">
+                      <select
+                        name="meet_month"
+                        id="meet_month"
+                        class="time_monthSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                      <p>월</p>
+                      <select name="meet_day" id="meet_day" class="time_daySel">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                      <p>일</p>
+                      <select
+                        name="meet_hou"
+                        id="meet_hour"
+                        class="time_hourSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                      </select>
+                      <p>시</p>
+                      <select
+                        name="meet_minute"
+                        id="meet_minute"
+                        class="time_minSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                      </select>
+                      <p>분</p>
+                      <button
+                        class="btn_purple_light"
+                        onclick="update_customer_meet_time()"
+                      >
+                        적용
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>01</td>
+                  <td>2023-01-03</td>
+                  <td>17:00</td>
+                  <td>가나다</td>
+                  <td>아파트</td>
+                  <td>인천 계양구 봉오대로677번길 6-8 1층</td>
+                  <td>60평</td>
+                  <td>종합</td>
+                  <td>비워있음</td>
+                  <td>1달 이내</td>
+                  <td>7천 ~ 8천</td>
+                  <td>010-1234-5678</td>
+                  <td>4인</td>
+                  <td>빠른연락부탁드립니다.</td>
+                  <td>A 인테리어</td>
+                  <td>주거, 상업</td>
+                  <td>주거, 상업</td>
+                  <td>서울/경기/인천</td>
+                  <td>가나다</td>
+                  <td>010-1234-5678</td>
+                  <td>0건</td>
+                  <td>없음</td>
+                  <td>
+                    <button class="btn_underline" onclick="open_syView();">
+                      1개월
+                    </button>
+                  </td>
+                  <td>10,000,000</td>
+                  <td>
+                    <button class="btn_underline cont_ornot">계약</button>
+                  </td>
+                  <td>
+                    <div class="flex_box">
+                      <select
+                        name="meet_month"
+                        id="meet_month"
+                        class="time_monthSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                      <p>월</p>
+                      <select name="meet_day" id="meet_day" class="time_daySel">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                      <p>일</p>
+                      <select
+                        name="meet_hou"
+                        id="meet_hour"
+                        class="time_hourSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                      </select>
+                      <p>시</p>
+                      <select
+                        name="meet_minute"
+                        id="meet_minute"
+                        class="time_minSel"
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                      </select>
+                      <p>분</p>
+                      <button
+                        class="btn_purple_light"
+                        onclick="update_customer_meet_time()"
+                      >
+                        적용
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- // table -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- pop_paysys -->
+    <div class="pop_wrap pop_paysys">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h2 class="pop_title">정액제</h2>
+          <button class="pop_close" onclick="close_syView(this);">
+            <img src="../img/ico_close.png" alt="closeBtn" />
+          </button>
+        </div>
+        <div class="pop_contents">
+          <table id="paysys_pop">
+            <colgroup>
+              <col width="" />
+              <col width="" />
+              <col width="" />
+              <col width="" />
+            </colgroup>
+            <tr>
+              <th>결제방법</th>
+              <th>상품종류</th>
+              <th>금액</th>
+              <th>이용기간</th>
+            </tr>
+            <tr>
+              <td>정액제</td>
+              <td>6개월</td>
+              <td>2,000,000</td>
+              <td>
+                2022.05.21 <br />
+                ~ <br />
+                진행중
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--// pop_paysys -->
+  </body>
+</html>

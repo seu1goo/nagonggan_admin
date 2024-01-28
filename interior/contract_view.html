@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="contract_view">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">시공사 결제</h2>
+          <ul id="page_top_sub" class="contract_top">
+            <li>
+              <a href="./status.html" title="고객문의">고객문의</a>
+            </li>
+            <li>
+              <a href="./result.html">업체발주</a>
+            </li>
+            <li>
+              <a href="./cp.html">공사 계약/진행건</a>
+            </li>
+            <li class="on">
+              <a href="./contract.html">시공사 결제</a>
+            </li>
+            <li>
+              <a href="./partner.html">시공사 DB</a>
+            </li>
+            <li>
+              <a href="./partnership.html">시공업체 제휴현황</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">포트폴리오 관리</a>
+            </li>
+            <li>
+              <a href="./progress.html">실시간현황 관리</a>
+            </li>
+            <li>
+              <a href="./photo.html">포폴 등록현황</a>
+            </li>
+            <li>
+              <a href="./second.html">3초 견적</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- company_pay -->
+          <div class="company_pay">
+            <h3>A인테리어 결제 내역</h3>
+            <table class="tbl_left">
+              <tr>
+                <th>시공사 번호</th>
+                <td>503</td>
+                <th>대표자</th>
+                <td>가나다</td>
+                <th>대표자 연락처</th>
+                <td>010-1234-5678</td>
+              </tr>
+              <tr>
+                <th>가입날짜</th>
+                <td>2023-02-06</td>
+                <th>범위</th>
+                <td>주거, 상업</td>
+                <th>지역</th>
+                <td>서울/경기/인천</td>
+              </tr>
+              <tr>
+                <th>총 건수</th>
+                <td>72건</td>
+                <th>차감건수</th>
+                <td>2건</td>
+                <th>남은건수</th>
+                <td>70건</td>
+              </tr>
+              <tr>
+                <th>누적금액 (예가)</th>
+                <td>1,222,000원</td>
+                <th>관리</th>
+                <td colspan="3">
+                  <button type="button" class="open_order btn_purple_light">
+                    발주내역 보기
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- // company_pay -->
+
+          <!-- filter -->
+          <div class="filter">
+            <div class="btn_ov">
+              <span class="ov_txt">전체</span>
+              <span class="ov_num">3건</span>
+            </div>
+            <form name="search_form" class="search_form">
+              <fieldset id="hd_sch">
+                <input
+                  type="text"
+                  name="fromDate"
+                  id="fromDate"
+                  value="2022-11-01"
+                  class="date"
+                  autocomplete="off"
+                />
+                <span class="wave">~</span>
+                <input
+                  type="text"
+                  name="toDate"
+                  id="toDate"
+                  value="2022-11-30"
+                  class="date"
+                  autocomplete="off"
+                />
+                <button
+                  type="submit"
+                  id="date_submit"
+                  class="btn_search"
+                  value="검색"
+                >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- // filter -->
+
+          <!-- table -->
+          <table>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>이슈날짜</th>
+                <th>상품명</th>
+                <th>결제신청일</th>
+                <th>결제일</th>
+                <th>승인일</th>
+                <th>결제금액</th>
+                <th>결제방법</th>
+                <th>이슈사항</th>
+                <th>담당자</th>
+                <th>비고</th>
+                <th>승인처리</th>
+                <th>메모</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>03</td>
+                <td>2023-02-06</td>
+                <td>6개월</td>
+                <td>2023-02-06</td>
+                <td>2023-02-06</td>
+                <td></td>
+                <td>120,000원</td>
+                <td>무통장입금</td>
+                <td>결제완료</td>
+                <td>abc</td>
+                <td>결제완료</td>
+                <td>
+                  <button type="button" class="btn_purple_light open_approval">
+                    승인
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="open_memo btn_purple_light"
+                    onclick="open_memo();"
+                  >
+                    메모
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>2023-02-06</td>
+                <td>6개월</td>
+                <td>2023-02-06</td>
+                <td>2023-02-06</td>
+                <td>2023-02-06</td>
+                <td>120,000원</td>
+                <td>무통장입금</td>
+                <td>(수기결제) 결제완료</td>
+                <td>abc</td>
+                <td>결제완료</td>
+                <td></td>
+                <td>
+                  <button
+                    class="open_memo btn_purple_light"
+                    onclick="open_memo();"
+                  >
+                    메모
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>2023-02-06</td>
+                <td>6개월</td>
+                <td>2023-02-06</td>
+                <td>2023-02-06</td>
+                <td>2023-02-06</td>
+                <td>120,000원</td>
+                <td>무통장입금</td>
+                <td>(수기결제) 결제완료</td>
+                <td>abc</td>
+                <td>결제완료</td>
+                <td></td>
+                <td>
+                  <button
+                    class="open_memo btn_purple_light"
+                    onclick="open_memo();"
+                  >
+                    메모
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- pop_order -->
+    <div class="pop_wrap pop_order">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h3 class="pop_title">발주내역</h3>
+          <button type="button" class="pop_close">
+            <span class="lnr lnr-cross"></span>
+          </button>
+        </div>
+        <div class="pop_contents">
+          <table>
+            <colgroup>
+              <col width="30%" />
+              <col width="30%" />
+              <col width="" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>날짜</th>
+                <th>건수</th>
+                <th>누적금액 (예가)</th>
+              </tr>
+            </thead>
+            <tbody id="month_list">
+              <tr>
+                <td>2022.08</td>
+                <td>5건</td>
+                <td>130,000,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- // pop_order -->
+
+    <!-- pop_approval -->
+    <div class="pop_wrap pop_approval">
+      <form id="pay_form">
+        <input
+          type="hidden"
+          name="cidx"
+          id="cidx"
+          value="<?php echo $company_code; ?>"
+        />
+        <input type="hidden" name="idx" id="idx" value="" />
+        <input type="hidden" name="pay_check" id="pay_check" value="" />
+        <input type="hidden" name="status" id="status" value="승인" />
+        <div class="pop_container">
+          <div class="pop_header">
+            <h2 class="pop_title">승인처리</h2>
+            <button type="button" class="pop_close">
+              <span class="lnr lnr-cross"></span>
+            </button>
+          </div>
+          <div class="pop_contents">
+            <ul>
+              <li>
+                <h3>비고</h3>
+                <textarea name="red_admin_memo" id="red_admin_memo"></textarea>
+              </li>
+            </ul>
+          </div>
+          <div class="pop_footer">
+            <button type="button" onclick="pay_reg()" class="btn_bk">
+              저장
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- // pop_approval -->
+
+    <!-- pop_memo -->
+    <div class="pop_wrap pop_memo">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h3 class="pop_title">메모</h3>
+          <button class="pop_close" onclick="close_memo();">
+            <img src="../img/ico_close.png" alt="closeBtn" />
+          </button>
+        </div>
+        <div class="pop_contents mp_cont">
+          <div class="mp_memo_box">
+            <textarea
+              name="company_memo_content"
+              id="company_memo_content"
+            ></textarea>
+            <div class="mmb_btn_wrap">
+              <button
+                class="btn_bk"
+                onclick="reg_memo($('#memo_company_code').val());"
+              >
+                작성하기
+              </button>
+            </div>
+          </div>
+          <div class="mp_table_box" id="company_memo_list">
+            <table>
+              <tr>
+                <th>날짜</th>
+                <th>작성자</th>
+                <th>메모</th>
+                <th>전체내용</th>
+              </tr>
+              <tr>
+                <td>2023-02-08 11:11</td>
+                <td>abc123</td>
+                <td>
+                  <div class="simple_memo">내용</div>
+                  <div class="all_memo">
+                    <div class="am_box">
+                      <button
+                        type="button"
+                        class="am_close_btn"
+                        onclick="close_all_memo()"
+                      >
+                        <img src="../img/ico_close.png" alt="닫기" />
+                      </button>
+                      <p class="am_txt">상세내용</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button class="btn_purple_dark" onclick="open_all_memo(this)">
+                    상세보기
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // pop_memo -->
+  </body>
+</html>

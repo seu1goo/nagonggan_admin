@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="contract">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">시공사 결제</h2>
+          <ul id="page_top_sub" class="contract_top">
+            <li>
+              <a href="./status.html" title="고객문의">고객문의</a>
+            </li>
+            <li>
+              <a href="./result.html">업체발주</a>
+            </li>
+            <li>
+              <a href="./cp.html">공사 계약/진행건</a>
+            </li>
+            <li class="on">
+              <a href="./contract.html">시공사 결제</a>
+            </li>
+            <li>
+              <a href="./partner.html">시공사 DB</a>
+            </li>
+            <li>
+              <a href="./partnership.html">시공업체 제휴현황</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">포트폴리오 관리</a>
+            </li>
+            <li>
+              <a href="./progress.html">실시간현황 관리</a>
+            </li>
+            <li>
+              <a href="./photo.html">포폴 등록현황</a>
+            </li>
+            <li>
+              <a href="./second.html">3초 견적</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter -->
+          <div class="filter">
+            <div class="btn_ov">
+              <span class="ov_txt">전체</span>
+              <span class="ov_num">3건</span>
+            </div>
+            <form name="search_form" id="search_form" class="search_form">
+              <input
+                type="text"
+                name="fromDate"
+                id="fromDate"
+                value="2022-11-01"
+                class="date"
+                autocomplete="off"
+              />
+              <span class="wave">~</span>
+              <input
+                type="text"
+                name="toDate"
+                id="toDate"
+                value="2022-11-30"
+                class="date"
+                autocomplete="off"
+              />
+              <fieldset id="hd_sch">
+                <input
+                  type="text"
+                  name="user_name"
+                  id="sch_stx"
+                  value=""
+                  maxlength="20"
+                  placeholder="고객명/시공사명을 입력해주세요."
+                />
+                <button
+                  type="submit"
+                  id="sch_submit"
+                  class="btn_search"
+                  value="검색"
+                >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- // filter -->
+
+          <!-- btn_area -->
+          <div class="btn_area">
+            <button type="button" class="btn_bk open_write">수기 결제</button>
+          </div>
+          <!-- // btn_area -->
+
+          <!-- table -->
+          <table>
+            <colgroup>
+              <col width="4%" />
+              <col width="6%" />
+              <col width="6%" />
+              <col width="6%" />
+              <col width="6%" />
+              <col width="6%" />
+              <col width="8%" />
+              <col width="" />
+              <col width="8%" />
+              <col width="" />
+              <col width="7%" />
+              <col width="6%" />
+              <col width="7%" />
+              <col width="7%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>번호</th>
+                <th>시공사</th>
+                <th>총 건수</th>
+                <th>차감 건수</th>
+                <th>남은 건수</th>
+                <th>누적금액 (예가)</th>
+                <th>이용기간</th>
+                <th>결제신청일</th>
+                <th>결제일</th>
+                <th>승인일</th>
+                <th>상태</th>
+                <th>이월처리</th>
+                <th>이용기간변경</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>03</td>
+                <td>503</td>
+                <td>
+                  <a href="./contract_view.html" class="btn_underline"
+                    >시공사</a
+                  >
+                </td>
+                <td>10건</td>
+                <td>5건</td>
+                <td>5건</td>
+                <td>1,000,000</td>
+                <td>2022-02-08 ~ 2023-02-08</td>
+                <td>2023-01-06</td>
+                <td>2023-01-06 15:39:40</td>
+                <td>2023-01-06</td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button type="button" class="btn_purple_light open_change">
+                    변경
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>503</td>
+                <td>
+                  <a href="./contract_view.html" class="btn_underline"
+                    >시공사</a
+                  >
+                </td>
+                <td>10건</td>
+                <td>5건</td>
+                <td>5건</td>
+                <td>1,000,000</td>
+                <td>2022-02-08 ~ 2023-02-08</td>
+                <td>2023-01-06</td>
+                <td>2023-01-06 15:39:40</td>
+                <td>2023-01-06</td>
+                <td>이월 필요</td>
+                <td>
+                  <button type="button" class="btn_purple_light open_forward">
+                    이월
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn_purple_light open_change">
+                    변경
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>503</td>
+                <td>
+                  <a href="./contract_view.html" class="btn_underline"
+                    >시공사</a
+                  >
+                </td>
+                <td>10건</td>
+                <td>5건</td>
+                <td>5건</td>
+                <td>1,000,000</td>
+                <td>2022-02-08 ~ 2023-02-08</td>
+                <td>2023-01-06</td>
+                <td>2023-01-06 15:39:40</td>
+                <td>2023-01-06</td>
+                <td>만료</td>
+                <td></td>
+                <td>
+                  <button type="button" class="btn_purple_light open_change">
+                    변경
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- pop_write -->
+    <div class="pop_wrap pop_write">
+      <form id="pay_form">
+        <input type="hidden" name="company_code" id="company_code" value="" />
+        <div class="pop_container">
+          <div class="pop_header">
+            <h2 class="pop_title">수기결제</h2>
+            <button type="button" class="pop_close">
+              <span class="lnr lnr-cross"></span>
+            </button>
+          </div>
+          <div class="pop_contents">
+            <ul>
+              <li>
+                <h3>시공사 검색</h3>
+                <input
+                  type="text"
+                  id="search_txt"
+                  placeholder="검색어를 입력해주세요."
+                />
+                <button type="button" class="btn_search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li>
+                <h3>시공사</h3>
+                <h4 id="company_name"></h4>
+              </li>
+              <li>
+                <h3>이용개월수</h3>
+                <select name="pay_check" id="pay_check">
+                  <option value="1">1개월</option>
+                  <option value="2">2개월</option>
+                  <option value="3">3개월</option>
+                  <option value="6">6개월</option>
+                  <option value="12">1년</option>
+                </select>
+              </li>
+              <li>
+                <h3>결제신청일</h3>
+                <input
+                  type="text"
+                  name="reg_date"
+                  id="reg_date"
+                  class="date"
+                  value=""
+                />
+              </li>
+              <li>
+                <h3>결제승인일</h3>
+                <input
+                  type="text"
+                  name="payment_date"
+                  id="payment_date"
+                  class="date"
+                  value=""
+                />
+              </li>
+              <li>
+                <h3>결제금액</h3>
+                <input type="number" name="amount" id="amount" value="" />
+                <span>원</span>
+              </li>
+              <li>
+                <h3>결제방법</h3>
+                <select name="method_payment" id="method_payment">
+                  <option value="bank">무통장입금</option>
+                  <option value="card">카드결제</option>
+                </select>
+              </li>
+              <li>
+                <h3>입금자명</h3>
+                <input type="text" name="payer_name" id="payer_name" value="" />
+              </li>
+            </ul>
+          </div>
+          <div class="pop_footer">
+            <button
+              type="button"
+              onclick="pay_reg()"
+              id="reg_btn"
+              class="btn_bk"
+            >
+              저장
+            </button>
+          </div>
+          <div class="pop_search">
+            <ul id="pop_company_list">
+              <li><button>A인테리어</button></li>
+              <li><button>B인테리어</button></li>
+              <li><button>C인테리어</button></li>
+              <li><button>D인테리어</button></li>
+              <li><button>E인테리어</button></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- // pop_write -->
+
+    <!-- pop_forward -->
+    <div class="pop_wrap pop_forward">
+      <form id="period_form">
+        <div class="pop_container">
+          <div class="pop_header">
+            <h2 class="pop_title">이월처리</h2>
+            <button type="button" class="pop_close">
+              <span class="lnr lnr-cross"></span>
+            </button>
+          </div>
+          <div class="pop_contents">
+            <ul>
+              <li>
+                <h3>이월기간</h3>
+                <div class="btn_area">
+                  <button
+                    type="button"
+                    id="period_ch"
+                    data-idx="1"
+                    class="forward_month active"
+                  >
+                    1개월
+                  </button>
+                  <button
+                    type="button"
+                    id="period_ch2"
+                    data-idx="2"
+                    class="forward_month"
+                  >
+                    2개월
+                  </button>
+                  <button
+                    type="button"
+                    id="period_ch3"
+                    data-idx="3"
+                    class="forward_month"
+                  >
+                    3개월
+                  </button>
+                </div>
+                <p id="play_date">※ 현재 이용기간 : 2022.07.22 까지</p>
+                <p class="forward_txt">※ 이월 이용기간 : 2022.08.22 까지</p>
+              </li>
+              <li class="remark">
+                <h3>비고 (이월 사유 등)</h3>
+                <textarea name="period_memo" id="period_memo"></textarea>
+              </li>
+            </ul>
+          </div>
+          <div class="pop_footer">
+            <button type="button" onclick="period_reg();" class="btn_bk">
+              저장
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- // pop_forward -->
+
+    <!-- pop_change -->
+    <div class="pop_wrap pop_change">
+      <form id="change_form">
+        <div class="pop_container">
+          <div class="pop_header">
+            <h2 class="pop_title">이용기간 변경</h2>
+            <button type="button" class="pop_close">
+              <span class="lnr lnr-cross"></span>
+            </button>
+          </div>
+          <div class="pop_contents">
+            <ul>
+              <li>
+                <h3>이용기간</h3>
+                <input
+                  type="text"
+                  name="fromDate"
+                  id="fromDate"
+                  value="2022-11-01"
+                  class="date"
+                  autocomplete="off"
+                />
+                <span class="wave">~</span>
+                <input
+                  type="text"
+                  name="toDate"
+                  id="toDate"
+                  value="2022-11-30"
+                  class="date"
+                  autocomplete="off"
+                />
+                <p id="change_date_txt">※ 현재 이용기간 : 미사용</p>
+              </li>
+              <li>
+                <h3>발주건수</h3>
+                <input
+                  type="text"
+                  name="change_ea"
+                  id="change_ea"
+                  value=""
+                  class="num_small"
+                />
+                <span>건</span>
+                <p id="change_ea_txt">※ 현재 남은 발주건수 : 0건</p>
+              </li>
+              <li>
+                <h3>공사 한도금액</h3>
+                <input
+                  type="text"
+                  name="change_price"
+                  id="change_price"
+                  value=""
+                />
+                <span>원</span>
+                <p id="change_price_txt">※ 현재 한도 공사금액 : 0원</p>
+              </li>
+              <li class="remark">
+                <h3>비고 (연장 사유 등)</h3>
+                <textarea name="change_memo" id="change_memo"></textarea>
+              </li>
+            </ul>
+          </div>
+          <div class="pop_footer">
+            <button type="button" onclick="change_reg();" class="btn_bk">
+              저장
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- // pop_change -->
+  </body>
+</html>

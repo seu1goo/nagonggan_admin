@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="interior_write">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info">
+          <ul class="sub_menu">
+            <li class="on">
+              <a href="./interior.html">인테리어 정보</a>
+            </li>
+            <li>
+              <a href="./event.html">이벤트</a>
+            </li>
+            <li>
+              <a href="./popup.html">팝업</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <div class="title">
+            <button type="button" onclick="goBack()" class="btn_back">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <h2 id="container_title">인테리어 정보 작성</h2>
+          </div>
+
+          <div class="btn_area">
+            <a href="./interior.html" class="btn_gy">목록</a>
+            <a href="./interior.html" class="btn_bk" onclick="registration()"
+              >등록</a
+            >
+          </div>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- table -->
+          <table class="tbl_left">
+            <caption>
+              인테리어 정보 추가
+            </caption>
+            <tbody>
+              <tr>
+                <th>분류</th>
+                <td>
+                  <select
+                    name="content_category"
+                    id="content_category"
+                    required
+                  >
+                    <option value="">분류</option>
+                    <option value="인테리어 팁">인테리어 팁</option>
+                    <option value="인테리어 트렌드">인테리어 트렌드</option>
+                    <option value="인테리어 유럽">인테리어 유럽</option>
+                    <option value="인테리어 아시아">인테리어 아시아</option>
+                    <option value="인테리어 마감재">인테리어 마감재</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>제목</th>
+                <td>
+                  <input
+                    type="text"
+                    name="title"
+                    required
+                    id="title"
+                    class="input_lg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>부제목 (간단설명)</th>
+                <td>
+                  <input
+                    type="text"
+                    name="sub_title"
+                    required
+                    id="sub_title"
+                    class="input_lg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>태그</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="tag_str"
+                      required
+                      id="tag_str"
+                      class="input_lg"
+                    />
+                    <span>"태그 태그2 태그3" 식으로 입력</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>썸네일 이미지</th>
+                <td>
+                  <input
+                    type="file"
+                    name="upload_file_0"
+                    id="upload_file_0"
+                    onchange="imgPrivew(this,$('#preview_img'))"
+                  />
+                  <figure><img id="preview_img" /></figure>
+                </td>
+              </tr>
+              <tr>
+                <th>PC 상세페이지</th>
+                <td>
+                  <input
+                    type="file"
+                    name="upload_file_1"
+                    id="upload_file_1"
+                    onchange="imgPrivew(this,$('#preview_img2'))"
+                  />
+                  <figure><img id="preview_img2" /></figure>
+                </td>
+              </tr>
+              <tr>
+                <th>MO 상세페이지</th>
+                <td>
+                  <input
+                    type="file"
+                    name="upload_file_2"
+                    id="upload_file_2"
+                    onchange="imgPrivew(this,$('#preview_img3'))"
+                  />
+                  <figure><img id="preview_img3" /></figure>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>
