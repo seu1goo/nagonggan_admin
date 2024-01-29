@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="list">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li class="on">
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">에셋 리스트</h2>
+          <ul id="page_top_sub" class="3d_top">
+            <li>
+              <a href="./code.html">분류 코드 관리</a>
+            </li>
+            <li>
+              <a href="./filters.html">필터 관리</a>
+            </li>
+            <li>
+              <a href="./sort.html">필터 셋팅</a>
+            </li>
+            <li>
+              <a href="./menu.html">메뉴 관리</a>
+            </li>
+            <li>
+              <a href="./request.html">작업 의뢰</a>
+            </li>
+            <li class="on">
+              <a href="./list.html">에셋 리스트</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <form method="get" id="request_search">
+            <!-- filter -->
+            <div class="filter">
+              <div class="btn_ov">
+                <span class="ov_txt">전체 </span>
+                <span class="ov_num">3건</span>
+              </div>
+              <div class="select_form">
+                <select name="expose_type" id="expose_type">
+                  <option value="">에셋노출설정</option>
+                  <option value="0">모두</option>
+                  <option>내집꾸미기</option>
+                  <option>프랜차이즈</option>
+                </select>
+                <select name="use_yn" id="use_yn">
+                  <option value="">사용유무</option>
+                  <option value="Y">사용</option>
+                  <option value="N">사용안함</option>
+                </select>
+                <select name="working_state" id="working_state">
+                  <option value="">작업상태</option>
+                  <option value="미작업">미작업</option>
+                  <option value="작업중">작업중</option>
+                  <option value="검토중">검토중</option>
+                  <option value="수정중">수정중</option>
+                  <option value="작업완료">작업완료</option>
+                </select>
+                <select name="request_id" id="request_id">
+                  <option value="">의뢰자 선택</option>
+                  <option value="의뢰자1">의뢰자1</option>
+                  <option value="의뢰자2">의뢰자2</option>
+                </select>
+                <select name="graphic_worker" id="graphic_worker">
+                  <option value="">작업자 선택</option>
+                  <option value="작업자1">작업자1</option>
+                  <option value="작업자2">작업자2</option>
+                </select>
+                <fieldset>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="fromDate"
+                      id="fromDate"
+                      value=""
+                      class="date"
+                      autocomplete="off"
+                    />
+                    <span class="wave">~</span>
+                    <input
+                      type="text"
+                      name="toDate"
+                      id="toDate"
+                      value=""
+                      class="date"
+                      autocomplete="off"
+                    />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <input
+                    type="text"
+                    name="prd_name"
+                    value=""
+                    placeholder="상품명을 입력해주세요."
+                  />
+                </fieldset>
+                <fieldset>
+                  <input
+                    type="text"
+                    name="sch_code"
+                    value=""
+                    placeholder="분류코드를 입력해주세요."
+                  />
+                </fieldset>
+                <fieldset id="hd_sch">
+                  <button
+                    type="submit"
+                    id="sch_submit"
+                    class="btn_search"
+                    value="검색"
+                  >
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+            <!-- // filter -->
+
+            <!-- select_area -->
+            <div class="select_area">
+              <div class="select_box">
+                <select name="item_sort_select1" id="item_sort_select1">
+                  <option value="">1차분류</option>
+                  <option value="바닥" selected>바닥</option>
+                  <option value="도배">도배</option>
+                  <option value="도어">도어</option>
+                  <option value="가구">가구</option>
+                  <option value="조명">조명</option>
+                  <option value="욕실">욕실</option>
+                  <option value="싱크대">싱크대</option>
+                  <option value="DP">DP</option>
+                </select>
+                <select name="item_sort_select2" id="item_sort_select2">
+                  <option value="">2차분류</option>
+                  <option value="마루" selected>마루</option>
+                  <option value="장판">장판</option>
+                  <option value="타일">타일</option>
+                  <option value="대리석">대리석</option>
+                </select>
+                <select name="item_sort_select3" id="item_sort_select3">
+                  <option value="">3차분류</option>
+                  <option value="강마루" selected>강마루</option>
+                  <option value="강화마루">강화마루</option>
+                  <option value="원목마루">원목마루</option>
+                  <option value="온돌마루">온돌마루</option>
+                </select>
+                <button class="btn_apply btn_gy">필터없이 적용</button>
+              </div>
+            </div>
+            <!-- // select_area -->
+          </form>
+
+          <!-- table -->
+          <section class="form_scroll">
+            <table id="tablesorter" class="scroll_table">
+              <colgroup>
+                <col width="4%" />
+                <col width="8%" />
+                <col width="8%" />
+                <col width="6%" />
+                <col width="" />
+                <col width="6%" />
+                <col width="6%" />
+                <col width="6%" />
+                <col width="6%" />
+                <col width="5%" />
+                <col width="6%" />
+                <col width="5%" />
+                <col width="5%" />
+                <col width="5%" />
+                <col width="6%" />
+                <col width="4%" />
+                <col width="4%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>분류코드</th>
+                  <th>제품명</th>
+                  <th>사이즈</th>
+                  <th>썸네일</th>
+                  <th>삼품가격</th>
+                  <th>자재단가 (평당)</th>
+                  <th>작업상태</th>
+                  <th>완료일</th>
+                  <th>해상도</th>
+                  <th>에셋노출설정</th>
+                  <th>사용유무</th>
+                  <th>의뢰자</th>
+                  <th>작업자</th>
+                  <th>필터</th>
+                  <th>참고사이트</th>
+                  <th>관리</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03</td>
+                  <td>do_dl_77_00005401</td>
+                  <td>모던-우드화이트</td>
+                  <td>600x400x160</td>
+                  <td>
+                    <figure><img src="../img/img_material_thum.png" /></figure>
+                  </td>
+                  <td>0원</td>
+                  <td>0원</td>
+                  <td>작업중</td>
+                  <td>2023-01-31</td>
+                  <td>512</td>
+                  <td>모두노출</td>
+                  <td>Y</td>
+                  <td>설계1팀</td>
+                  <td>그래픽팀</td>
+                  <td>
+                    <button type="button" class="open_filter btn_purple_light">
+                      필터 설정
+                    </button>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.naver.com/"
+                      target="_blank"
+                      class="btn_purple_light"
+                      >이동</a
+                    >
+                  </td>
+                  <td>
+                    <a href="./list_edit.html" class="btn_purple_light">수정</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>do_dl_77_00005401</td>
+                  <td>모던-우드화이트</td>
+                  <td>600x400x160</td>
+                  <td>
+                    <figure><img src="../img/img_material_thum.png" /></figure>
+                  </td>
+                  <td>0원</td>
+                  <td>0원</td>
+                  <td>작업완료</td>
+                  <td>2023-01-31</td>
+                  <td>512</td>
+                  <td>내집꾸미기</td>
+                  <td>N</td>
+                  <td>설계1팀</td>
+                  <td>그래픽팀</td>
+                  <td>
+                    <button type="button" class="open_filter btn_purple_light">
+                      필터 설정
+                    </button>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.naver.com/"
+                      target="_blank"
+                      class="btn_purple_light"
+                      >이동</a
+                    >
+                  </td>
+                  <td>
+                    <a href="./list_edit.html" class="btn_purple_light">수정</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>01</td>
+                  <td>do_dl_77_00005401</td>
+                  <td>모던-우드화이트</td>
+                  <td>600x400x160</td>
+                  <td>
+                    <figure><img src="../img/img_material_thum.png" /></figure>
+                  </td>
+                  <td>0원</td>
+                  <td>0원</td>
+                  <td>작업완료</td>
+                  <td>2023-01-31</td>
+                  <td>512</td>
+                  <td>프랜차이즈</td>
+                  <td>Y</td>
+                  <td>설계1팀</td>
+                  <td>그래픽팀</td>
+                  <td>
+                    <button type="button" class="open_filter btn_purple_light">
+                      필터 설정
+                    </button>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.naver.com/"
+                      target="_blank"
+                      class="btn_purple_light"
+                      >이동</a
+                    >
+                  </td>
+                  <td>
+                    <a href="./list_edit.html" class="btn_purple_light">수정</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- // table -->
+
+          <!-- pagenation -->
+          <div class="pg_wrap">
+            <div class="pg">
+              <span class="pg_page pg_start">pg_start</span>
+              <span class="pg_page pg_prev">pg_prev</span>
+              <span class="pg_page pg_current">1</span>
+              <span class="pg_page">2</span>
+              <span class="pg_page">3</span>
+              <span class="pg_page">4</span>
+              <span class="pg_page">5</span>
+              <span class="pg_page">6</span>
+              <span class="pg_page">7</span>
+              <span class="pg_page">8</span>
+              <span class="pg_page">9</span>
+              <span class="pg_page">10</span>
+              <span class="pg_page pg_next">pg_next</span>
+              <span class="pg_page pg_end">pg_end</span>
+            </div>
+          </div>
+          <!-- // pagenation -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- pop_filter -->
+    <div class="pop_wrap pop_filter">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h2 class="pop_title">필터 설정</h2>
+          <button type="button" class="pop_close pop_filter_close">
+            <span class="lnr lnr-cross"></span>
+          </button>
+        </div>
+        <div class="pop_contents">
+          <div class="depth_select_wrap">
+            <div class="depth_select">
+              <select name="depth_2_select1" id="item_code">
+                <option value="브랜드">브랜드</option>
+                <option value="형태">형태</option>
+                <option value="종류">종류</option>
+                <option value="재질">재질</option>
+                <option value="인용">인용</option>
+                <option value="용도">용도</option>
+                <option value="샘플북">샘플북</option>
+                <option value="공간">공간</option>
+                <option value="두께">두께</option>
+                <option value="타입">타입</option>
+              </select>
+              <select name="depth_2_select2" id="filter_sel">
+                <option value="">필터분류</option>
+                <option value="필터1">필터1</option>
+                <option value="필터2">필터2</option>
+                <option value="필터3">필터3</option>
+              </select>
+              <button type="button" onclick="ca_filter_add()" class="btn_gy">
+                추가
+              </button>
+            </div>
+          </div>
+          <table>
+            <colgroup>
+              <col width="20%" />
+              <col width="" />
+              <col width="20%" />
+            </colgroup>
+            <tbody id="filter_list">
+              <tr>
+                <th>항목</th>
+                <td class="filter_area">
+                  <div class="flex_box">
+                    <p>필터</p>
+                    <button class="del_filter">
+                      <span class="lnr lnr-cross"></span>
+                    </button>
+                  </div>
+                  <div class="flex_box">
+                    <p>필터</p>
+                    <button class="del_filter">
+                      <span class="lnr lnr-cross"></span>
+                    </button>
+                  </div>
+                </td>
+                <td><button class="btn_bk">항목 삭제</button></td>
+              </tr>
+              <tr>
+                <th>항목</th>
+                <td class="filter_area">
+                  <div class="flex_box">
+                    <p>필터</p>
+                    <button class="del_filter">
+                      <span class="lnr lnr-cross"></span>
+                    </button>
+                  </div>
+                  <div class="flex_box">
+                    <p>필터</p>
+                    <button class="del_filter">
+                      <span class="lnr lnr-cross"></span>
+                    </button>
+                  </div>
+                </td>
+                <td><button class="btn_bk">항목 삭제</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pop_footer">
+          <button type="button" onclick="filter_save()" class="btn_bk">
+            저장
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- // pop_filter -->
+  </body>
+</html>

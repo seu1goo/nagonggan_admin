@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="inhouse">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li>
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li class="on">
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">
+            <span>인하우스툴</span>
+            <button class="guide_open">
+              <i class="fa fa-circle-question"></i>
+            </button>
+          </h2>
+          <div class="guide">
+            <h2>
+              <span>카메라 기본 조작 방법</span>
+              <button class="guide_close">
+                <img src="../img/ico_close.png" alt="닫기" />
+              </button>
+            </h2>
+            <p>
+              <i class="fa-solid fa-rotate-right"></i> 카메라 회전
+              <span>마우스 우클릭 후 드래그</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-magnifying-glass"></i> 카메라 줌
+              <span>마우스 우클릭 후 휠</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-location-crosshairs"></i> 카메라 위치 변경
+              <span>마우스 휠 클릭 후 드래그</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-door-open"></i> 문 손잡이 에셋의 경우,
+              <span
+                >문 오브젝트 표시 기능이 추가되었습니다. (v키로 토글 가능)</span
+              >
+            </p>
+          </div>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- name -->
+          <div class="name">
+            <input
+              type="text"
+              name="prd_name"
+              id="sch_prd_name"
+              value=""
+              placeholder="제품명을 입력해주세요."
+            />
+            <button
+              type="button"
+              onclick="prd_search()"
+              id="sch_submit"
+              class="btn_search"
+              value="검색"
+            >
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+          <!-- // name -->
+
+          <!-- filter -->
+          <div class="filter">
+            <h4>제품명 : <span id="prd_name">00000147</span></h4>
+            <fieldset id="hd_sch">
+              <select name="texture_option" id="texture_option">
+                <option value="">텍스쳐 해상도</option>
+                <option value="512">512</option>
+                <option value="1024">1024</option>
+                <option value="2048">2048</option>
+              </select>
+              <select name="grid_option" id="grid_option">
+                <option value="">Grid 표시안함</option>
+                <option value="0.1">0.1</option>
+                <option value="1.0" selected>1.0</option>
+                <option value="10.0">10.0</option>
+                <option value="100.0">100.0</option>
+              </select>
+              <input
+                type="text"
+                name="sch_asset"
+                id="sch_asset"
+                value=""
+                placeholder="에셋 코드명을 입력해주세요"
+              />
+              <button
+                type="button"
+                id="asset_load"
+                class="btn_gy"
+                value="불러오기"
+              >
+                불러오기
+              </button>
+              <button
+                type="button"
+                id="asset_reset"
+                class="btn_bk"
+                value="초기화"
+              >
+                초기화
+              </button>
+              <button
+                type="button"
+                id="asset_save"
+                class="btn_purple_light"
+                value="검색"
+              >
+                저장
+              </button>
+            </fieldset>
+          </div>
+          <!-- // filter -->
+
+          <!-- viewer -->
+          <div class="viewer">
+            <img src="../img/img_inhouse.png" />
+
+            <!-- material -->
+            <div class="material">
+              <!-- rotate_list -->
+              <div class="rotate_list">
+                <h3>View Option</h3>
+                <ul>
+                  <li>
+                    <h4>Asset Rotate</h4>
+                    <div id="calculator" class="asset_rotate">
+                      <div class="calc-slider rotate-slider"></div>
+                      <div class="calc-right">
+                        <input
+                          class="calc-input rotate-input"
+                          type="number"
+                          min="0"
+                          max="360"
+                          oninput="maxLengthChk(this)"
+                          maxlength="3"
+                          placeholder="0"
+                        />
+                        <span>deg</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="Door_Angle">
+                    <h4>Door Angle</h4>
+                    <div id="calculator" class="door_angle">
+                      <div class="calc-slider door-slider"></div>
+                      <div class="calc-right">
+                        <input
+                          class="calc-input door_input"
+                          type="number"
+                          min="0"
+                          max="130"
+                          oninput="maxLengthChk(this)"
+                          maxlength="3"
+                          placeholder="0"
+                        />
+                        <span>deg</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>Offset</h4>
+                    <div id="calculator" class="asset_offset">
+                      <div class="calc-slider offset-slider"></div>
+                      <div class="calc-right">
+                        <input
+                          class="calc-input offset-input"
+                          type="text"
+                          max="10"
+                          oninput="maxLengthChk(this)"
+                          maxlength="2"
+                          placeholder="0"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>Scale</h4>
+                    <div id="calculator" class="asset_scale">
+                      <div class="calc-slider scale-slider"></div>
+                      <div class="calc-right">
+                        <input
+                          class="calc-input scale-input"
+                          type="text"
+                          maxlength="3"
+                          placeholder="0"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- // rotate_list -->
+
+              <!-- mesh_list -->
+              <div class="material_list mesh_list">
+                <h3>Mesh List</h3>
+                <ul id="mesh_list">
+                  <li><button type="button">m0</button></li>
+                  <li><button type="button">m1</button></li>
+                  <li><button type="button">m2</button></li>
+                </ul>
+              </div>
+              <!-- // mesh_list -->
+
+              <!-- material_slots -->
+              <div class="material_list material_slots">
+                <h3>Material Slots</h3>
+                <ul id="Material_list">
+                  <li><button type="button">mtp0</button></li>
+                  <li><button type="button">mtp1</button></li>
+                  <li><button type="button">mtp2</button></li>
+                </ul>
+              </div>
+              <!-- // material_slots -->
+
+              <!-- detail -->
+              <div class="detail">
+                <h3>Detail</h3>
+                <ul id="detail_li_list">
+                  <li class="detail_global">
+                    <h4>Global</h4>
+                    <ul class="detail_list">
+                      <li class="global_position">
+                        <h5>
+                          <span>Use World Position</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input
+                          type="checkbox"
+                          name="glo_position"
+                          id="glo_position"
+                        />
+                      </li>
+                      <li class="global_uvscale">
+                        <h5>
+                          <span>UVScale</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input
+                          type="number"
+                          name="glo_uvscale"
+                          id="glo_uvscale"
+                        />
+                      </li>
+                      <li class="global_uvtiling">
+                        <h5>
+                          <span>UVTiling</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <h6>X</h6>
+                        <input
+                          type="number"
+                          name="glo_uvtiling_x"
+                          id="glo_uvtiling_x"
+                          class="input_sm"
+                        />
+                        <h6 class="y">Y</h6>
+                        <input
+                          type="number"
+                          name="glo_uvtiling_y"
+                          id="glo_uvtiling_y"
+                          class="input_sm"
+                        />
+                      </li>
+                      <li class="global_rotate">
+                        <h5>
+                          <span>Rotate</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div id="calculator" class="global_rotate_slider">
+                          <div class="calc-slider"></div>
+                          <div class="calc-right">
+                            <input class="calc-input" type="number" value="0" />
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <h5>
+                          <span>OffsetUV</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <h6>X</h6>
+                        <input
+                          type="number"
+                          name="glo_offsetuv_x"
+                          id="glo_offsetuv_x"
+                          class="input_sm"
+                        />
+                        <h6 class="y">Y</h6>
+                        <input
+                          type="number"
+                          name="glo_offsetuv_y"
+                          id="glo_offsetuv_y"
+                          class="input_sm"
+                        />
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="detail_rma">
+                    <h4>RMA</h4>
+                    <ul class="detail_list">
+                      <li class="rma_texture flex_st">
+                        <h5>
+                          <span>RMA Texture</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div class="img_area">
+                          <figure>
+                            <img
+                              src="../img/img_inhouse_texture.png"
+                              alt="RMA Texture"
+                            />
+                          </figure>
+                          <h6>
+                            file_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_name
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="detail_diffuse">
+                    <h4>Diffuse</h4>
+                    <ul class="detail_list">
+                      <li class="diffuse_amount">
+                        <h5>
+                          <span>Diffuse Amount</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input
+                          type="number"
+                          name="dif_amount"
+                          id="dif_amount"
+                        />
+                      </li>
+                      <li class="diffuse_texture flex_st">
+                        <h5>
+                          <span>Diffuse Texture</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div class="img_area">
+                          <figure>
+                            <img
+                              src="../img/img_inhouse_texture.png"
+                              alt="Diffuse Texture"
+                            />
+                          </figure>
+                          <h6>
+                            file_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_name
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="detail_ao">
+                    <h4>Ambient Occiusion</h4>
+                    <ul class="detail_list">
+                      <li class="ao_amount">
+                        <h5>
+                          <span>AO Amount</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div id="calculator" class="ao_amount_slider">
+                          <div class="calc-slider"></div>
+                          <div class="calc-right">
+                            <input class="calc-input" type="number" value="0" />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="detail_metallic">
+                    <h4>Metallic</h4>
+                    <ul class="detail_list">
+                      <li class="metallic_amount">
+                        <h5>
+                          <span>Metallic Amount</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div id="calculator" class="metallic_amount_slider">
+                          <div class="calc-slider"></div>
+                          <div class="calc-right">
+                            <input class="calc-input" type="number" value="0" />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="detail_roughness">
+                    <h4>Roughness</h4>
+                    <ul class="detail_list">
+                      <li class="roughness_amount">
+                        <h5>
+                          <span>Roughness Amount</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div id="calculator" class="roughness_amount_slider">
+                          <div class="calc-slider"></div>
+                          <div class="calc-right">
+                            <input class="calc-input" type="number" value="0" />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="detail_cubemap">
+                    <h4>Cubemap</h4>
+                    <ul class="detail_list">
+                      <li class="cubemap_use">
+                        <h5>
+                          <span>Cubemap Use?</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input type="checkbox" name="cube_use" id="cube_use" />
+                      </li>
+                      <li class="cubemap_amount">
+                        <h5>
+                          <span>Cubemap Amount</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input
+                          type="number"
+                          name="cube_amount"
+                          id="cube_amount"
+                        />
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="detail_emissive">
+                    <h4>Emissive</h4>
+                    <ul class="detail_list">
+                      <li class="emissive_amount">
+                        <h5>
+                          <span>Emissive Amount</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input
+                          type="number"
+                          name="emi_amount"
+                          id="emi_amount"
+                        />
+                      </li>
+                      <li class="emissive_color">
+                        <h5>
+                          <span>Emissive Color</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <input
+                          type="text"
+                          id="emi_color"
+                          name="emi_color"
+                          value="#fffff"
+                        />
+                      </li>
+                      <li class="emissive_texture flex_st">
+                        <h5>
+                          <span>Emissive Texture</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div class="img_area">
+                          <figure>
+                            <img
+                              src="../img/img_inhouse_texture.png"
+                              alt="Emissive Texture"
+                            />
+                          </figure>
+                          <h6>
+                            file_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_name
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="detail_normal">
+                    <h4>Normal</h4>
+                    <ul class="detail_list">
+                      <li class="normal_texture flex_st">
+                        <h5>
+                          <span>Normal Texture</span>
+                          <button><span class="lnr lnr-undo"></span></button>
+                        </h5>
+                        <div class="img_area">
+                          <figure>
+                            <img
+                              src="../img/img_inhouse_texture.png"
+                              alt="Normal Texture"
+                            />
+                          </figure>
+                          <h6>
+                            file_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_namefile_name
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // detail -->
+            </div>
+            <!-- // material -->
+          </div>
+          <!-- // viewer -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

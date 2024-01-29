@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="filters">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li class="on">
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">필터 관리</h2>
+          <ul id="page_top_sub" class="3d_top">
+            <li>
+              <a href="./code.html">분류 코드 관리</a>
+            </li>
+            <li class="on">
+              <a href="./filters.html">필터 관리</a>
+            </li>
+            <li>
+              <a href="./sort.html">필터 셋팅</a>
+            </li>
+            <li>
+              <a href="./menu.html">메뉴 관리</a>
+            </li>
+            <li>
+              <a href="./request.html">작업 의뢰</a>
+            </li>
+            <li>
+              <a href="./list.html">에셋 리스트</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter_tab -->
+          <div class="filter_tab">
+            <button
+              class="btn_purple cate_code active"
+              data-filter="1"
+              onclick="filterNum(this,1);"
+            >
+              항목관리
+            </button>
+            <button
+              class="btn_purple cate_code"
+              data-filter="2"
+              onclick="filterNum(this,2);"
+            >
+              데이터관리
+            </button>
+          </div>
+          <!-- // filter_tab -->
+
+          <!-- filter_edit -->
+          <div class="filter_edit">
+            <!-- fe1 -->
+            <div class="filter_edit_box fe1 on">
+              <div class="feb_top">
+                <ul>
+                  <li>
+                    <h5>필터항목코드</h5>
+                    <input
+                      type="text"
+                      name="add_item_code"
+                      id="add_item_code"
+                    />
+                  </li>
+                  <li>
+                    <h5>필터항목이름</h5>
+                    <input
+                      type="text"
+                      name="add_item_name"
+                      id="add_item_name"
+                    />
+                  </li>
+                </ul>
+                <button class="btn_gy" onclick="item_add()">추가</button>
+              </div>
+              <div class="feb_bot">
+                <table>
+                  <tr>
+                    <th>필터항목코드</th>
+                    <th>필터항목이름</th>
+                    <th>관리</th>
+                  </tr>
+                  <tbody id="item_list">
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          name="item_code"
+                          id="item_code1"
+                          value=""
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          name="item_name"
+                          id="item_name1"
+                          value=""
+                        />
+                      </td>
+                      <td>
+                        <button
+                          class="btn_purple_line"
+                          type="button"
+                          onclick="item_edit()"
+                        >
+                          수정
+                        </button>
+                        <button
+                          class="btn_purple_light"
+                          type="button"
+                          onclick="item_del()"
+                        >
+                          삭제
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- // fe1 -->
+
+            <!-- fe2 -->
+            <div class="filter_edit_box fe2">
+              <div class="feb_sel">
+                <select id="item_code">
+                  <option value="브랜드">브랜드</option>
+                  <option value="형태">형태</option>
+                  <option value="종류">종류</option>
+                  <option value="재질">재질</option>
+                  <option value="인용">인용</option>
+                  <option value="용도">용도</option>
+                  <option value="샘플북">샘플북</option>
+                  <option value="공간">공간</option>
+                  <option value="두께">두께</option>
+                  <option value="타입">타입</option>
+                </select>
+                <button class="btn_gy" onclick="openFeUnder(this);">
+                  필터데이터 관리
+                </button>
+              </div>
+              <div class="feb_under">
+                <div class="feb_top">
+                  <ul>
+                    <li>
+                      <h5>필터이름</h5>
+                      <input
+                        type="text"
+                        name="add_filter_name"
+                        id="add_filter_name"
+                        value=""
+                      />
+                    </li>
+                  </ul>
+                  <button class="btn_gy" type="button" onclick="filter_add()">
+                    추가
+                  </button>
+                </div>
+                <div class="feb_bot">
+                  <table>
+                    <colgroup>
+                      <col width="15%" />
+                      <col width="15%" />
+                      <col width="" />
+                      <col width="20%" />
+                    </colgroup>
+                    <tr>
+                      <th>필터항목코드</th>
+                      <th>필터항목이름</th>
+                      <th>필터이름</th>
+                      <th>관리</th>
+                    </tr>
+                    <tbody id="filter_list">
+                      <tr>
+                        <td>f_form</td>
+                        <td>형태</td>
+                        <td>
+                          <input
+                            type="text"
+                            name="filter_name"
+                            value="디자인"
+                          />
+                        </td>
+                        <td>
+                          <button class="btn_purple_line" onclick="item_edit()">
+                            수정
+                          </button>
+                          <button class="btn_purple_light" onclick="item_del()">
+                            삭제
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- // fe2 -->
+          </div>
+          <!-- // filter_edit -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

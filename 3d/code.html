@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="code">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li class="on">
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">분류 코드 관리</h2>
+          <ul id="page_top_sub" class="3d_top">
+            <li class="on">
+              <a href="./code.html">분류 코드 관리</a>
+            </li>
+            <li>
+              <a href="./filters.html">필터 관리</a>
+            </li>
+            <li>
+              <a href="./sort.html">필터 셋팅</a>
+            </li>
+            <li>
+              <a href="./menu.html">메뉴 관리</a>
+            </li>
+            <li>
+              <a href="./request.html">작업 의뢰</a>
+            </li>
+            <li>
+              <a href="./list.html">에셋 리스트</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- cate_code_tab -->
+          <div class="cate_code_tab">
+            <button data-cate="1" class="btn_purple cate_code active">
+              1차 분류관리
+            </button>
+            <button data-cate="2" class="btn_purple cate_code">
+              2차 분류관리
+            </button>
+            <button data-cate="3" class="btn_purple cate_code">
+              3차 분류관리
+            </button>
+          </div>
+          <!-- // cate_code_tab -->
+
+          <!-- cate_code_edit -->
+          <div class="cate_code_edit">
+            <div class="cc_tab_box cc1 on">
+              <ul class="cct_top">
+                <li>
+                  <h5>분류코드</h5>
+                  <input
+                    type="text"
+                    name="new_prd_category_1_code"
+                    id="new_prd_category_1_code"
+                    maxlength="10"
+                  />
+                </li>
+                <li>
+                  <h5>분류명</h5>
+                  <input
+                    type="text"
+                    name="new_prd_category_1_name"
+                    id="new_prd_category_1_name"
+                    maxlength="10"
+                  />
+                </li>
+                <button
+                  class="btn_gy btncode_add_btn"
+                  onclick="add_prd_category_1();"
+                >
+                  추가
+                </button>
+              </ul>
+
+              <div class="cct_bot">
+                <table id="prd_category_1_table">
+                  <tr>
+                    <th>분류코드</th>
+                    <th>분류명</th>
+                    <th>관리</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="text"
+                        readonly="true"
+                        value="fl"
+                        maxlength="10"
+                        id="prd_category_1_code_1"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        value="바닥"
+                        maxlength="10"
+                        id="prd_category_1_name_1"
+                      />
+                    </td>
+                    <td>
+                      <button
+                        onclick="edit_prd_category()"
+                        class="btn_purple_line btn_code_adjust"
+                      >
+                        수정
+                      </button>
+                      <button
+                        onclick="del_prd_category()"
+                        class="btn_purple_light btn_code_delete"
+                      >
+                        삭제
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="cc_tab_box cc2">
+              <div class="cct_sel">
+                <select name="prd_category_2_1" id="prd_category_2_1">
+                  <option value="">1차분류</option>
+                  <option value="바닥" selected>바닥</option>
+                  <option value="도배">도배</option>
+                  <option value="도어">도어</option>
+                  <option value="가구">가구</option>
+                  <option value="조명">조명</option>
+                  <option value="욕실">욕실</option>
+                  <option value="싱크대">싱크대</option>
+                  <option value="DP">DP</option>
+                </select>
+                <button
+                  class="btn_gy btn_cate_code"
+                  manage_prd_category_lv="2"
+                  onclick="openCtUnder(this);"
+                >
+                  분류관리
+                </button>
+              </div>
+              <div class="cct_under" id="prd_category_2_list">
+                <ul class="cct_top">
+                  <li>
+                    <h5>분류코드</h5>
+                    <input
+                      type="text"
+                      name="new_prd_category_2_code"
+                      maxlength="10"
+                      id="new_prd_category_2_code"
+                    />
+                  </li>
+                  <li>
+                    <h5>분류명</h5>
+                    <input
+                      type="text"
+                      name="new_prd_category_2_name"
+                      maxlength="10"
+                      id="new_prd_category_2_name"
+                    />
+                  </li>
+                  <button
+                    onclick="add_prd_category()"
+                    class="btn_gy btn_code_add"
+                  >
+                    추가
+                  </button>
+                </ul>
+                <div class="cct_bot">
+                  <table id="prd_category_2_table">
+                    <tr>
+                      <th>분류코드</th>
+                      <th>분류명</th>
+                      <th>수정/삭제</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          value="ma"
+                          maxlength="10"
+                          id="prd_category_2_code_1"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="마루"
+                          maxlength="10"
+                          id="prd_category_2_name_1"
+                        />
+                      </td>
+                      <td>
+                        <div class="flex_box">
+                          <button
+                            onclick="edit_prd_category()"
+                            class="btn_purple_line btn_code_adjust"
+                          >
+                            수정
+                          </button>
+                          <button
+                            onclick="del_prd_category()"
+                            class="btn_purple_light btn_code_delete"
+                          >
+                            삭제
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="cc_tab_box cc3">
+              <div class="cct_sel">
+                <select name="prd_category_3_1" id="prd_category_3_1">
+                  <option value="">1차분류</option>
+                  <option value="바닥" selected>바닥</option>
+                  <option value="도배">도배</option>
+                  <option value="도어">도어</option>
+                  <option value="가구">가구</option>
+                  <option value="조명">조명</option>
+                  <option value="욕실">욕실</option>
+                  <option value="싱크대">싱크대</option>
+                  <option value="DP">DP</option>
+                </select>
+                <select name="prd_category_3_2" id="prd_category_3_2">
+                  <option value="">2차분류</option>
+                  <option value="마루 (9)" selected>마루 (9)</option>
+                  <option value="장판 (10)">장판 (10)</option>
+                  <option value="타일 (11)">타일 (11)</option>
+                  <option value="대리석 (12)">대리석 (12)</option>
+                </select>
+                <button
+                  class="btn_gy btn_cate_code"
+                  manage_prd_category_lv="3"
+                  onclick="openCtUnder(this);"
+                >
+                  분류관리
+                </button>
+              </div>
+              <div class="cct_under" id="prd_category_3_list">
+                <ul class="cct_top">
+                  <li>
+                    <h5>분류코드</h5>
+                    <input
+                      type="text"
+                      name="new_prd_category_3_code"
+                      maxlength="10"
+                      id="new_prd_category_3_code"
+                    />
+                  </li>
+                  <li>
+                    <h5>분류명</h5>
+                    <input
+                      type="text"
+                      name="new_prd_category_3_name"
+                      maxlength="10"
+                      id="new_prd_category_3_name"
+                    />
+                  </li>
+                  <button
+                    onclick="add_prd_category()"
+                    class="btn_gy btn_code_add"
+                  >
+                    추가
+                  </button>
+                </ul>
+                <div class="cct_bot">
+                  <table id="prd_category_3_table">
+                    <tr>
+                      <th>분류코드</th>
+                      <th>분류명</th>
+                      <th>수정/삭제</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          value="st"
+                          maxlength="10"
+                          id="prd_category_3_code_1"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="강마루"
+                          maxlength="10"
+                          id="prd_category_3_name_1"
+                        />
+                      </td>
+                      <td>
+                        <div class="flex_box">
+                          <button
+                            onclick="edit_prd_category()"
+                            class="btn_purple_line btn_code_adjust"
+                          >
+                            수정
+                          </button>
+                          <button
+                            onclick="del_prd_category()"
+                            class="btn_purple_light btn_code_delete"
+                          >
+                            삭제
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // cate_code_edit -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

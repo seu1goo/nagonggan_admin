@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="partner_view">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li>
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li class="on">
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <div class="title">
+            <button type="button" onclick="goBack()" class="btn_back">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <h2 id="container_title">시공 후기 글쓰기</h2>
+          </div>
+          <div class="btn_area">
+            <a href="./review.html" class="btn_gy">목록</a>
+            <button
+              type="submit"
+              value="등록"
+              id="residence_submit"
+              class="btn_bk"
+              accesskey="s"
+            >
+              등록
+            </button>
+          </div>
+        </div>
+
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- table -->
+          <table class="tbl_left">
+            <tbody>
+              <tr>
+                <th>시공사</th>
+                <td class="partner_select">
+                  <input
+                    type="text"
+                    name="company"
+                    id="company"
+                    required
+                    value=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>시공기간</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="fromDate"
+                      id="fromDate"
+                      value=""
+                      class="date"
+                      autocomplete="off"
+                    />
+                    <span class="wave">~</span>
+                    <input
+                      type="text"
+                      name="toDate"
+                      id="toDate"
+                      value=""
+                      class="date"
+                      autocomplete="off"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>분류</th>
+                <td>
+                  <select name="space_category_code" id="space_category_code">
+                    <option value="">분류 전체</option>
+                    <optgroup label="주거">
+                      <option value="아파트">아파트</option>
+                      <option value="빌라">빌라</option>
+                      <option value="주택">주택</option>
+                      <option value="오피스텔 / 원룸">오피스텔 / 원룸</option>
+                    </optgroup>
+                    <optgroup></optgroup>
+                    <optgroup label="상업">
+                      <option value="요식업">요식업</option>
+                      <option value="카페">카페</option>
+                      <option value="숙박">숙박</option>
+                      <option value="상가">상가</option>
+                      <option value="오피스">오피스</option>
+                      <option value="교육">교육</option>
+                      <option value="문화">문화</option>
+                      <option value="뷰티">뷰티</option>
+                      <option value="여가">여가</option>
+                      <option value="체육">체육</option>
+                      <option value="프랜차이즈">프랜차이즈</option>
+                      <option value="메디컬">메디컬</option>
+                      <option value="기타">기타</option>
+                    </optgroup>
+                    <optgroup></optgroup>
+                    <optgroup label="한분야">
+                      <option value="도배">도배</option>
+                      <option value="장판">장판</option>
+                      <option value="마루">마루</option>
+                      <option value="주방">주방</option>
+                      <option value="욕실">욕실</option>
+                      <option value="타일">타일</option>
+                      <option value="방문">방문</option>
+                      <option value="중문">중문</option>
+                      <option value="샷시">샷시</option>
+                      <option value="필름">필름</option>
+                      <option value="몰딩">몰딩</option>
+                    </optgroup>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>지역</th>
+                <td>
+                  <select name="construct_zone" id="construct_zone" required>
+                    <option value="">지역</option>
+                    <option value="서울/경기/인천">서울/경기/인천</option>
+                    <option value="대전/세종/충청">대전/세종/충청</option>
+                    <option value="부산/대구/경상">부산/대구/경상</option>
+                    <option value="광주/목포/전라">광주/목포/전라</option>
+                    <option value="강원/제주">강원/제주</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td>
+                  <input
+                    type="text"
+                    name="construct_address"
+                    value=""
+                    id="construct_address"
+                    onClick=""
+                    required
+                    class="input_lg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>평수</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="number"
+                      name="construct_area"
+                      id="construct_area"
+                      value=""
+                      maxlength="8"
+                      oninput="maxLengthCheck(this)"
+                      required
+                      numberOnly
+                    />
+                    <p>평</p>
+                    <span>(숫자만 입력해주세요)</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>시공금액</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="number"
+                      name="construct_amount"
+                      id="construct_amount"
+                      maxlength="10"
+                      oninput="maxLengthCheck(this)"
+                      value=""
+                      required
+                    />
+                    <p>만원</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>고객명</th>
+                <td>
+                  <input
+                    type="text"
+                    name="user_name"
+                    id="user_name"
+                    value=""
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>베스트후기</th>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="best_YN"
+                    value="Y"
+                    id="checkall"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>별점</th>
+                <td>
+                  <select name="star_point" id="star_point" required>
+                    <option value="5">★★★★★ 5점</option>
+                    <option value="4">★★★★☆ 4점</option>
+                    <option value="3">★★★☆☆ 3점</option>
+                    <option value="2">★★☆☆☆ 2점</option>
+                    <option value="1">★☆☆☆☆ 1점</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>노출여부</th>
+                <td>
+                  <select name="main_yn" id="main_yn" required>
+                    <option value="N">비노출</option>
+                    <option value="Y">노출</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>이미지</th>
+                <td>
+                  <input
+                    type="file"
+                    multiple="multiple"
+                    name="input_imgs0[]"
+                    id="input_imgs0"
+                    onchange="setDetailImage(event);"
+                  />
+                  <div id="preview_banner_img"></div>
+                </td>
+              </tr>
+              <tr>
+                <th>제목</th>
+                <td>
+                  <input
+                    type="text"
+                    name="review_title"
+                    id="review_title"
+                    required
+                    value=""
+                    class="input_lg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>내용</th>
+                <td>
+                  <textarea
+                    name="review_content"
+                    id="review_content"
+                  ></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

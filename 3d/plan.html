@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="plan">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li>
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li class="on">
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">도면 에셋 관리</h2>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- viewer -->
+          <div class="viewer">
+            <div class="viewer_area" id="current_gplan_image">
+              <img src="../img/img_plan.png" />
+            </div>
+            <ul class="view_btn">
+              <li class="active">
+                <button type="button" class="view_2d">2D</button>
+              </li>
+              <li><button type="button" class="view_3d">3D</button></li>
+            </ul>
+          </div>
+          <!-- // viewer -->
+
+          <!-- asset -->
+          <div class="asset">
+            <div class="asset_type">
+              <h4>도면 타입 선택</h4>
+              <select name="aseet_type_sel" id="aseet_type_sel">
+                <option value="">선택</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+              </select>
+              <ul>
+                <li>
+                  <button type="button" id="btn_add_gplan_type" class="btn_gy">
+                    새로만들기
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    id="btn_set_global_gplan_type"
+                    class="btn_bk"
+                  >
+                    서비스적용
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="render">
+              <h4>렌더 범위 설정</h4>
+              <input
+                type="number"
+                name="min_render"
+                id="min_render"
+                placeholder="시작 index 번호"
+                min="0"
+              />
+              <span>-</span>
+              <input
+                type="number"
+                name="max_render"
+                id="max_render"
+                placeholder="종료 index 번호"
+                min="0"
+              />
+            </div>
+            <table class="asset_table">
+              <colgroup>
+                <col width="20%" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>공간</th>
+                  <th>에셋코드</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>거실</td>
+                  <td>
+                    <div>
+                      <div class="gplan_type_asset_info" id="asset_living">
+                        <figure>
+                          <img src="../img/img_plan_living.png" />
+                        </figure>
+                        EG10272
+                      </div>
+                      <button
+                        type="button"
+                        data-target_obj="#asset_living"
+                        data-target_key="living"
+                        class="btn_purple_dark open_search_asset"
+                      >
+                        검색
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>방</td>
+                  <td>
+                    <div>
+                      <div class="gplan_type_asset_info" id="asset_room">
+                        <figure>
+                          <img src="../img/img_plan_room.png" />
+                        </figure>
+                        EG12801
+                      </div>
+                      <button
+                        type="button"
+                        data-target_obj="#asset_room"
+                        data-target_key="room"
+                        class="btn_purple_dark open_search_asset"
+                      >
+                        검색
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>현관 / 베란다</td>
+                  <td>
+                    <div>
+                      <div class="gplan_type_asset_info" id="asset_entrance">
+                        <figure>
+                          <img src="../img/img_plan_terrace.png" />
+                        </figure>
+                        BZ-1092 (P) (GL-1092)
+                      </div>
+                      <button
+                        type="button"
+                        data-target_obj="#asset_entrance"
+                        data-target_key="entrance"
+                        class="btn_purple_dark open_search_asset"
+                      >
+                        검색
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>화장실</td>
+                  <td>
+                    <div>
+                      <div class="gplan_type_asset_info" id="asset_restroom">
+                        <figure>
+                          <img src="../img/img_plan_restroom.png" />
+                        </figure>
+                        66523
+                      </div>
+                      <button
+                        type="button"
+                        data-target_obj="#asset_restroom"
+                        data-target_key="restroom"
+                        class="btn_purple_dark open_search_asset"
+                      >
+                        검색
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btn_start">
+              <button id="create_gplan_type_img" class="btn_purple_ng">
+                이미지 생성 시작
+              </button>
+            </div>
+            <div class="progress">
+              <h4>진행과정</h4>
+              <ul>
+                <li class="plan_num" id="progress_count">100,000/100,000</li>
+                <li class="plan_success" id="progress_success">
+                  [성공] : 000000
+                </li>
+                <li class="plan_fail" id="progress_failed">[실패] 000000</li>
+                <li class="plan_per" id="progress_percent">15%</li>
+              </ul>
+            </div>
+            <div class="console">
+              <h4>
+                CONSOLE
+                <button type="button" class="open_error">
+                  <i class="fa fa-circle-question"></i>
+                </button>
+              </h4>
+              <div class="error">
+                <h2>
+                  <span>에러 코드</span>
+                  <button class="close_error">
+                    <img src="../img/ico_close.png" alt="닫기" />
+                  </button>
+                </h2>
+                <p>
+                  <strong>400</strong> 하단 내용 외의 예외가 발생하는 경우에
+                  사용됩니다.
+                </p>
+                <p>
+                  <strong>401</strong> 이미지는 생성되었으나 서버에 저장하지
+                  못했습니다.
+                </p>
+                <p>
+                  <strong>403</strong> 사용된 에셋이 잘못되어 에셋을 로드하지
+                  못했습니다.
+                </p>
+                <p>
+                  <strong>405</strong> 해당하는 Index 에 대한 도면 데이터가
+                  존재하지 않습니다.
+                </p>
+                <p>
+                  <strong>406</strong> 이미 해당 버전의 도면 이미지가
+                  존재합니다.
+                </p>
+                <p>
+                  <strong>410</strong> 해당 index의 도면이 존재하지 않습니다
+                </p>
+                <p><strong>411</strong> 잘못된 도면데이터 입니다.</p>
+                <p><strong>412</strong> 아직 준비중인 도면입니다</p>
+                <p><strong>413</strong> 아직 검수중인 도면입니다.</p>
+                <p>
+                  <strong>414</strong> 도면이미지의 경로가 잘못 저장되어
+                  있습니다.
+                </p>
+                <p>
+                  <strong>415</strong> 이미 해당 버전의 도면이미지가 존재합니다.
+                </p>
+              </div>
+              <div class="console_tb">
+                <ul class="console_th">
+                  <li class="console_idx">index</li>
+                  <li class="console_apt">아파트 이름</li>
+                  <li class="console_state">상태</li>
+                </ul>
+                <div class="console_td_wrap" id="progress_log">
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                  <ul class="console_td">
+                    <li>100,000</li>
+                    <li>서울시 구로구 도림천로12길</li>
+                    <li>적용실패</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // asset -->
+
+          <!-- current -->
+          <div class="current">
+            <div class="current_type">
+              <h4 id="global_gplan_type_label"></h4>
+              <figure id="global_set_gplan" data-idx="">
+                <img src="../img/img_plan.png" alt="사용 도면 타입" />
+              </figure>
+            </div>
+            <div class="not_applied">
+              <h4>미적용 도면</h4>
+              <table>
+                <colgroup>
+                  <col width="20%" />
+                  <col width="*" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>index</th>
+                    <th>아파트 이름</th>
+                  </tr>
+                </thead>
+                <tbody id="not_applied_list_table">
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                  <tr>
+                    <td>100,000</td>
+                    <td>서울시 구로구 도림천로12길 6 대림아르빌 32A</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- pagenation -->
+              <div class="pg_wrap">
+                <div class="pg">
+                  <span class="pg_page pg_start">pg_start</span>
+                  <span class="pg_page pg_prev">pg_prev</span>
+                  <span class="pg_page pg_current">1</span>
+                  <span class="pg_page">2</span>
+                  <span class="pg_page">3</span>
+                  <span class="pg_page">4</span>
+                  <span class="pg_page">5</span>
+                  <span class="pg_page">6</span>
+                  <span class="pg_page">7</span>
+                  <span class="pg_page">8</span>
+                  <span class="pg_page">9</span>
+                  <span class="pg_page">10</span>
+                  <span class="pg_page pg_next">pg_next</span>
+                  <span class="pg_page pg_end">pg_end</span>
+                </div>
+              </div>
+              <!-- // pagenation -->
+            </div>
+          </div>
+          <!-- // current -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+
+    <!-- popup -->
+    <div class="pop_wrap pop_search_asset">
+      <div class="pop_container">
+        <div class="pop_header">
+          <h2 class="pop_title">에셋 검색</h2>
+          <button type="button" class="pop_close">
+            <span class="lnr lnr-cross"></span>
+          </button>
+        </div>
+        <div class="pop_contents">
+          <div class="search_asset">
+            <input
+              type="text"
+              name="sch_asset"
+              id="sch_asset"
+              placeholder="제품명 또는 에셋 코드를 입력해주세요."
+            />
+            <button
+              type="submit"
+              id="asset_submit"
+              class="btn_search"
+              value="검색"
+            >
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+          <table>
+            <colgroup>
+              <col width="20%" />
+              <col width="20%" />
+              <col width="20%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>썸네일</th>
+                <th>제품명</th>
+                <th>에셋 코드</th>
+                <th>선택</th>
+              </tr>
+            </thead>
+            <tbody id="asset_search_list">
+              <tr>
+                <td>
+                  <figure><img src="../img/img_plan_room.png" /></figure>
+                </td>
+                <td>EG12801</td>
+                <td>fl_za_77_00001071</td>
+                <td>
+                  <button type="button" class="btn_purple_dark">적용</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure><img src="../img/img_plan_room.png" /></figure>
+                </td>
+                <td>EG12801</td>
+                <td>fl_za_77_00001071</td>
+                <td>
+                  <button type="button" class="btn_purple_dark">적용</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure><img src="../img/img_plan_room.png" /></figure>
+                </td>
+                <td>EG12801</td>
+                <td>fl_za_77_00001071</td>
+                <td>
+                  <button type="button" class="btn_purple_dark">적용</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure><img src="../img/img_plan_room.png" /></figure>
+                </td>
+                <td>EG12801</td>
+                <td>fl_za_77_00001071</td>
+                <td>
+                  <button type="button" class="btn_purple_dark">적용</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- // popup -->
+  </body>
+</html>

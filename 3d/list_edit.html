@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="list_edit">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li class="on">
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <div class="title">
+            <button type="button" onclick="goBack()" class="btn_back">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <h2 id="container_title">에셋 수정</h2>
+          </div>
+          <div class="btn_area">
+            <a href="./list.html" class="btn_gy">목록</a>
+            <button type="button" id="residence_submit" class="btn_bk">
+              등록
+            </button>
+          </div>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- table -->
+          <table class="tbl_left">
+            <tbody>
+              <tr>
+                <th>분류코드</th>
+                <td>li_lo_77_00005404</td>
+              </tr>
+              <tr>
+                <th>제품명</th>
+                <td>
+                  <input
+                    type="text"
+                    name="prd_name"
+                    value="밀레 거실등 LED120W - 화이트"
+                    placeholder="제품명을 입력해주세요."
+                    class="input_lg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>사이즈</th>
+                <td>
+                  <input
+                    type="text"
+                    name="prd_size"
+                    value="730x650x80"
+                    placeholder="사이즈를 입력해주세요."
+                    class=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>상품가격</th>
+                <td>
+                  <input
+                    type="text"
+                    name="prd_price"
+                    value="0"
+                    placeholder="상품 가격을 입력해주세요."
+                    class=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>자재단가 (평당)</th>
+                <td>
+                  <input
+                    type="text"
+                    name="prd_unit_price"
+                    value="0"
+                    placeholder="자재 단가를 입력해주세요."
+                    class=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>텍스쳐 해상도</th>
+                <td>
+                  <select name="texture_px" id="texture_px">
+                    <option value="512">512</option>
+                    <option value="1024" selected>1024</option>
+                    <option value="2048">2048</option>
+                  </select>
+                  <span>* 해상도 값이 없을시 기본값 1024로 설정됩니다.</span>
+                </td>
+              </tr>
+              <tr>
+                <th>작업상태</th>
+                <td>
+                  <select name="working_state_1" id="working_state_1">
+                    <option value="미작업">미작업</option>
+                    <option value="작업중" selected>작업중</option>
+                    <option value="검토중">검토중</option>
+                    <option value="수정중">수정중</option>
+                    <option value="작업완료">작업완료</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>에셋노출설정</th>
+                <td>
+                  <select name="expose_type" id="expose_type">
+                    <option value="">에셋노출설정</option>
+                    <option value="0" selected>모두</option>
+                    <option value="1">내집꾸미기</option>
+                    <option value="2">프랜차이즈</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>사용유무</th>
+                <td>
+                  <select
+                    name="use_<?=$row['idx'];?>"
+                    id="use_<?=$row['idx'];?>"
+                  >
+                    <option value="N">사용안함</option>
+                    <option value="Y" selected>사용</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>작업자 선택</th>
+                <td>
+                  <select name="graphic_worker" id="graphic_worker">
+                    <option value="">작업자 선택</option>
+                    <option value="작업자1">작업자1</option>
+                    <option value="작업자2">작업자2</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>참고사이트</th>
+                <td>
+                  <input
+                    type="text"
+                    name="prd_origin_link"
+                    value="https://ohou.se/productions/109523/selling?affect_type=ProductCategoryIndex&affect_id="
+                    placeholder="자재 단가를 입력해주세요."
+                    class="input_lg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>LOD 설정</th>
+                <td class="lod_setting">
+                  <div class="flex_box">
+                    <label for="check_lod">LOD 적용</label>
+                    <input type="checkbox" name="check_lod" id="check_lod" />
+                  </div>
+                  <div class="flex_box">
+                    <label for="lod_distance_00">LOD 0 (1024)</label>
+                    <input
+                      type="number"
+                      name="lod_distance_00"
+                      id="lod_distance_00"
+                      value=""
+                    />
+                  </div>
+                  <div class="flex_box">
+                    <label for="lod_distance_01">LOD 1 (512)</label>
+                    <input
+                      type="number"
+                      name="lod_distance_01"
+                      id="lod_distance_01"
+                      value=""
+                    />
+                  </div>
+                  <div class="flex_box">
+                    <label for="lod_distance_02">LOD 2 (256)</label>
+                    <input
+                      type="number"
+                      name="lod_distance_02"
+                      id="lod_distance_02"
+                      value=""
+                    />
+                  </div>
+                  <div class="flex_box">
+                    <label for="lod_distance_03">LOD 3 (128)</label>
+                    <input
+                      type="number"
+                      name="lod_distance_03"
+                      id="lod_distance_03"
+                      value=""
+                    />
+                  </div>
+                  <div class="flex_box">
+                    <label for="lod_distance_04">LOD 4 (64)</label>
+                    <input
+                      type="number"
+                      name="lod_distance_04"
+                      id="lod_distance_04"
+                      value=""
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>비고</th>
+                <td>
+                  <textarea
+                    name="request_remark"
+                    id="request_remark"
+                  ></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

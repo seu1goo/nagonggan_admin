@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="sort">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./space.html">3D 공간 게시글</a>
+            </li>
+            <li class="on">
+              <a href="./code.html">3D 상품</a>
+            </li>
+            <li>
+              <a href="./asset.html">에셋 업로드</a>
+            </li>
+            <li>
+              <a href="./inhouse.html">인하우스툴</a>
+            </li>
+            <li>
+              <a href="./plan.html">도면 에셋 관리</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">필터 셋팅</h2>
+          <ul id="page_top_sub" class="3d_top">
+            <li>
+              <a href="./code.html">분류 코드 관리</a>
+            </li>
+            <li>
+              <a href="./filters.html">필터 관리</a>
+            </li>
+            <li class="on">
+              <a href="./sort.html">필터 셋팅</a>
+            </li>
+            <li>
+              <a href="./menu.html">메뉴 관리</a>
+            </li>
+            <li>
+              <a href="./request.html">작업 의뢰</a>
+            </li>
+            <li>
+              <a href="./list.html">에셋 리스트</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter -->
+          <div class="filter">
+            <div class="sort_select">
+              <select name="item_sort_select1" id="item_sort_select1">
+                <option value="">1차분류</option>
+                <option value="바닥" selected>바닥</option>
+                <option value="도배">도배</option>
+                <option value="도어">도어</option>
+                <option value="가구">가구</option>
+                <option value="조명">조명</option>
+                <option value="욕실">욕실</option>
+                <option value="싱크대">싱크대</option>
+                <option value="DP">DP</option>
+              </select>
+              <select name="item_sort_select2" id="item_sort_select2">
+                <option value="">2차분류</option>
+                <option value="마루" selected>마루</option>
+                <option value="장판">장판</option>
+                <option value="타일">타일</option>
+                <option value="대리석">대리석</option>
+              </select>
+              <select name="item_sort_select3" id="item_sort_select3">
+                <option value="">3차분류</option>
+                <option value="강마루" selected>강마루</option>
+                <option value="강화마루">강화마루</option>
+                <option value="원목마루">원목마루</option>
+                <option value="온돌마루">온돌마루</option>
+              </select>
+            </div>
+            <button type="button" onclick="setting_save()" class="btn_bk">
+              저장
+            </button>
+          </div>
+          <!-- // filter -->
+
+          <!-- table -->
+          <table class="tbl_left">
+            <colgroup>
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tr>
+              <th colspan="2" class="f_choice_cate">분류를 선택해주세요.</th>
+            </tr>
+            <tr>
+              <th>브랜드</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter4" />
+                    <label for="sort_kind1_filter4">필터4</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter5" />
+                    <label for="sort_kind1_filter5">필터5</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter6" />
+                    <label for="sort_kind1_filter6">필터6</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter7" />
+                    <label for="sort_kind1_filter7">필터7</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter8" />
+                    <label for="sort_kind1_filter8">필터8</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter9" />
+                    <label for="sort_kind1_filter9">필터9</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter10" />
+                    <label for="sort_kind1_filter10">필터10</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter11" />
+                    <label for="sort_kind1_filter11">필터11</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter12" />
+                    <label for="sort_kind1_filter12">필터12</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter13" />
+                    <label for="sort_kind1_filter13">필터13</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter14" />
+                    <label for="sort_kind1_filter14">필터14</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>형태</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>종류</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>재질</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>인용</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>용도</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>샘플북</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>공간</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>두께</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>타입</th>
+              <td>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter1" />
+                    <label for="sort_kind1_filter1">필터1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter2" />
+                    <label for="sort_kind1_filter2">필터2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sort_kind1_filter3" />
+                    <label for="sort_kind1_filter3">필터3</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <!-- // table -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>
