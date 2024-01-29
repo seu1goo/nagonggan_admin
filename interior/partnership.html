@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="partnership">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <h2 id="container_title">시공업체 제휴현황</h2>
+          <ul id="page_top_sub" class="contract_top">
+            <li>
+              <a href="./status.html" title="고객문의">고객문의</a>
+            </li>
+            <li>
+              <a href="./result.html">업체발주</a>
+            </li>
+            <li>
+              <a href="./cp.html">공사 계약/진행건</a>
+            </li>
+            <li>
+              <a href="./contract.html">시공사 결제</a>
+            </li>
+            <li>
+              <a href="./partner.html">시공사 DB</a>
+            </li>
+            <li class="on">
+              <a href="./partnership.html">시공업체 제휴현황</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">포트폴리오 관리</a>
+            </li>
+            <li>
+              <a href="./progress.html">실시간현황 관리</a>
+            </li>
+            <li>
+              <a href="./photo.html">포폴 등록현황</a>
+            </li>
+            <li>
+              <a href="./second.html">3초 견적</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- filter -->
+          <div class="filter">
+            <p class="f_title">기준날짜</p>
+            <input
+              type="text"
+              name="fromDate"
+              id="StartDate"
+              class="date"
+              autocomplete="off"
+            />
+          </div>
+          <!-- // filter -->
+
+          <!-- state_list -->
+          <section id="state_list">
+            <h2 class="status_date">
+              <i class="fa-regular fa-calendar"></i> 2023.02.07
+              <span class="status_date_kind">(누적)(어제)(오늘)</span>
+            </h2>
+            <table>
+              <colgroup>
+                <col width="9%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>
+                    <h2>
+                      서울/경기/인천
+                      <br />
+                      (<strong id="total_1">0</strong>건)
+                    </h2>
+                  </th>
+                  <td>
+                    <ul>
+                      <li>
+                        <p>주거공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>상업공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li>
+                        <p>도배</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>장판</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>주방</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>욕실/타일</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>방문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>샷시</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>필름</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>몰딩</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <h2>
+                      대전/세종/충청
+                      <br />
+                      (<strong id="total_1">0</strong>건)
+                    </h2>
+                  </th>
+                  <td>
+                    <ul>
+                      <li>
+                        <p>주거공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>상업공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li>
+                        <p>도배</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>장판</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>주방</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>욕실/타일</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>방문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>샷시</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>필름</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>몰딩</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <h2>
+                      부산/대구/경상
+                      <br />
+                      (<strong id="total_1">0</strong>건)
+                    </h2>
+                  </th>
+                  <td>
+                    <ul>
+                      <li>
+                        <p>주거공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>상업공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li>
+                        <p>도배</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>장판</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>주방</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>욕실/타일</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>방문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>샷시</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>필름</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>몰딩</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <h2>
+                      광주/목포/전라
+                      <br />
+                      (<strong id="total_1">0</strong>건)
+                    </h2>
+                  </th>
+                  <td>
+                    <ul>
+                      <li>
+                        <p>주거공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>상업공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li>
+                        <p>도배</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>장판</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>주방</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>욕실/타일</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>방문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>샷시</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>필름</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>몰딩</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <h2>
+                      강원/제주
+                      <br />
+                      (<strong id="total_1">0</strong>건)
+                    </h2>
+                  </th>
+                  <td>
+                    <ul>
+                      <li>
+                        <p>주거공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>상업공간</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li>
+                        <p>도배</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>장판</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>주방</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>욕실/타일</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>방문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>중문</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>샷시</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>필름</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                      <li>
+                        <p>몰딩</p>
+                        <div>
+                          <span>424</span>
+                          <span>0</span>
+                          <span class="today">0</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>

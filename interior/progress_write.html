@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="인테리어 3D메타버스 플랫폼" />
+    <title>나만의공간 관리자</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/nagonggan-og.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:description" content="인테리어 3D메타버스 플랫폼" />
+    <meta property="og:title" content="나만의공간" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Linearicons-Free/WebFont/style.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- jQuery -->
+    <script src="../js/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/library/jquery/jquery-ui.min.css" />
+    <script src="../js/library/jquery/jquery-ui.min.js"></script>
+
+    <!-- datetimepicker -->
+    <link
+      rel="stylesheet"
+      href="../js/library/datetimepicker/jquery.datetimepicker.css"
+    />
+    <script src="../js/library/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- minicolor -->
+    <link
+      rel="stylesheet"
+      href="../js/library/minicolor/jquery.minicolors.css"
+    />
+    <script src="../js/library/minicolor/jquery.minicolors.min.js"></script>
+
+    <!-- js -->
+    <script src="../js/admin.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav id="gnb">
+        <ul class="gnb_ul">
+          <li class="logo">
+            <a href="../notifications/push.html"
+              ><img src="../img/logo_wh.png" alt="나만의 공간"
+            /></a>
+          </li>
+          <li class="gnb_li">
+            <a href="../notifications/push.html"
+              ><i class="fa-solid fa-bell"></i> 알림 관리</a
+            >
+          </li>
+          <li class="gnb_li on">
+            <a href="../interior/cs.html"
+              ><i class="fa-solid fa-hammer"></i> 인테리어</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../3d/space.html"
+              ><i class="fa-solid fa-cube"></i> 3D 공간</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../program/myhouse.html"
+              ><i class="fas fa-desktop"></i> 프로그램 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../contents/interior.html"
+              ><i class="fa-solid fa-image"></i> 컨텐츠 관리</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../customer/inquiry.html"
+              ><i class="fas fa-comment-dots"></i> 고객센터</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../member/member.html"
+              ><i class="fas fa-user-alt"></i> 회원 정보</a
+            >
+          </li>
+          <li class="gnb_li">
+            <a href="../manager/manager.html"
+              ><i class="fa-solid fa-lock"></i> 관리자 정보</a
+            >
+          </li>
+          <li class="gnb_bottom">
+            <ul>
+              <li class="gnb_li">
+                <a href="https://seu1goo.github.io/nagonggan/"
+                  ><i class="fas fa-home"></i> 나공 바로가기</a
+                >
+              </li>
+              <li class="gnb_li">
+                <a href="../"><i class="fas fa-sign-out-alt"></i> 로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- wrapper -->
+    <div id="wrapper" class="progress_write">
+      <!-- page_top -->
+      <div id="page_top">
+        <div id="page_info" class="inte_top">
+          <ul class="sub_menu">
+            <li>
+              <a href="./cs.html">CS 관리</a>
+            </li>
+            <li class="on">
+              <a href="./status.html">시공사 관리</a>
+            </li>
+            <li>
+              <a href="./review.html">시공 후기</a>
+            </li>
+          </ul>
+        </div>
+        <div id="admin_name">
+          <i class="fas fa-user-circle"></i>
+          관리팀 <span>관리자계정</span>
+        </div>
+      </div>
+      <!-- // page_top -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- title_area -->
+        <div class="title_area">
+          <div class="title">
+            <button type="button" onclick="goBack()" class="btn_back">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <h2 id="container_title">실시간현황 수정</h2>
+          </div>
+
+          <div class="btn_area">
+            <select name="portfolio_state" id="portfolio_state">
+              <option value="1">대기</option>
+              <option value="2">편집중</option>
+              <option value="3">완료</option>
+            </select>
+            <a href="./progress.html" class="btn_gy">목록</a>
+            <button
+              type="submit"
+              value="등록"
+              id="residence_submit"
+              class="btn_bk"
+              accesskey="s"
+            >
+              등록
+            </button>
+          </div>
+        </div>
+        <!-- // title_area -->
+
+        <!-- container_wr -->
+        <div class="container_wr">
+          <!-- table -->
+          <table class="tbl_left">
+            <tbody>
+              <tr>
+                <th>시공사</th>
+                <td>
+                  <input
+                    type="text"
+                    name="company"
+                    value="시공사"
+                    id="company"
+                    autocomplete="off"
+                    required
+                    class="partner_select_btn"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>분류</th>
+                <td>
+                  <select name="space_type" id="space_type" required>
+                    <option value="">대분류</option>
+                    <option value="주거공간">주거공간</option>
+                    <option value="상업공간">상업공간</option>
+                  </select>
+                  <select name="space_category" id="space_category">
+                    <option value="">소분류</option>
+                    <option value="요식업">요식업</option>
+                    <option value="카페">카페</option>
+                    <option value="숙박">숙박</option>
+                    <option value="상가">상가</option>
+                    <option value="오피스">오피스</option>
+                    <option value="교육">교육</option>
+                    <option value="문화">문화</option>
+                    <option value="뷰티">뷰티</option>
+                    <option value="여가">여가</option>
+                    <option value="체육">체육</option>
+                    <option value="프랜차이즈">프랜차이즈</option>
+                    <option value="메디컬">메디컬</option>
+                    <option value="기타">기타</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td>
+                  <input
+                    type="text"
+                    name="construct_address"
+                    value="경기 이천시 증신로70번길 16"
+                    id="construct_address"
+                    class="input_lg"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>지역</th>
+                <td>
+                  <select name="construct_zone" id="construct_zone" required>
+                    <option value="">지역</option>
+                    <option value="서울/경기/인천" selected>
+                      서울/경기/인천
+                    </option>
+                    <option value="대전/세종/충청">대전/세종/충청</option>
+                    <option value="부산/대구/경상">부산/대구/경상</option>
+                    <option value="광주/목포/전라">광주/목포/전라</option>
+                    <option value="강원/제주">강원/제주</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <th>면적</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="construct_area"
+                      id="construct_area"
+                      value="40"
+                      required
+                      numberOnly
+                    />
+                    <p>평</p>
+                    <span>(숫자만 입력해주세요)</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>기간</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="construct_period"
+                      id="construct_period"
+                      value="11"
+                      required
+                    />
+                    <p>일</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>금액</th>
+                <td>
+                  <div class="flex_box">
+                    <input
+                      type="text"
+                      name="construct_amount"
+                      id="construct_amount"
+                      value="1000"
+                      required
+                    />
+                    <p>만원</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>진행상황</th>
+                <td>
+                  <select name="construct_state" id="construct_state" required>
+                    <option value="">선택하세요</option>
+                    <option value="1">시공전</option>
+                    <option value="2">시공중</option>
+                    <option value="3">시공완료</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>노출여부</th>
+                <td><span class="waiting">대기중</span></td>
+              </tr>
+              <tr class="photo_area">
+                <th>내용</th>
+                <td>
+                  <!-- 시공전 -->
+                  <div class="flex_box">
+                    <h3>시공전</h3>
+                    <select name="img_1_chk" id="img_1_chk" required>
+                      <option value="N">미검수</option>
+                      <option value="Y">검수완료</option>
+                    </select>
+                    <span
+                      >시공전 또는 시공전 + 시공중 사진을 등록하고 사진 검수
+                      완료 후 홈페이지에 노출</span
+                    >
+                  </div>
+                  <div class="input_imgs_wrap input_imgs_wrap0">
+                    <div class="input_wrap_plus" data-index="0">
+                      <figure>
+                        <img
+                          src="../img/ico_photo_plus_off.png"
+                          alt="icon_plus"
+                          onMouseOver="this.src='../img/ico_photo_plus_on.png'"
+                          onMouseOut="this.src='../img/ico_photo_plus_off.png'"
+                        />
+                      </figure>
+                      <p>이미지를 추가하세요.</p>
+                    </div>
+                    <img id="input_imgs_img0" />
+                    <div class="img_id_set img_id_set0">
+                      <div class="imgfile_box">
+                        <img
+                          src="../img/img_interior_thum.png"
+                          class="selProductFile"
+                          id="view_imgs0_1"
+                        />
+                      </div>
+                      <input
+                        type="file"
+                        name="input_imgs0[]"
+                        id="input_imgs0_1"
+                        class="input_imgs0"
+                        onchange="imgPrivewP(this,$('#view_imgs0_1'))"
+                      />
+
+                      <a
+                        href="javascript:void(0);"
+                        onclick="imgDel()"
+                        class="btn_delete img_id_set0_1"
+                      >
+                        <i class="fa fa-times-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- // 시공전 -->
+
+                  <!-- 시공중 -->
+                  <div class="flex_box">
+                    <h3>시공중</h3>
+                    <select name="img_2_chk" id="img_2_chk" required>
+                      <option value="N">미검수</option>
+                      <option value="Y">검수완료</option>
+                    </select>
+                    <span
+                      >시공전 또는 시공전 + 시공중 사진을 등록하고 사진 검수
+                      완료 후 홈페이지에 노출</span
+                    >
+                  </div>
+                  <div class="input_imgs_wrap input_imgs_wrap1">
+                    <div class="input_wrap_plus" data-index="1">
+                      <figure>
+                        <img
+                          src="../img/ico_photo_plus_off.png"
+                          alt="icon_plus"
+                          onMouseOver="this.src='../img/ico_photo_plus_on.png'"
+                          onMouseOut="this.src='../img/ico_photo_plus_off.png'"
+                        />
+                      </figure>
+                      <p>이미지를 추가하세요.</p>
+                    </div>
+                    <img id="input_imgs_img1" />
+                    <div class="img_id_set img_id_set1">
+                      <div class="imgfile_box">
+                        <img
+                          src="../img/img_interior_thum.png"
+                          class="selProductFile"
+                          id="view_imgs1_1"
+                        />
+                      </div>
+                      <input
+                        type="file"
+                        name="input_imgs1[]"
+                        id="input_imgs1_1"
+                        class="input_imgs1"
+                        onchange="imgPrivewP(this,$('#view_imgs1_1'))"
+                      />
+
+                      <a
+                        href="javascript:void(0);"
+                        onclick="imgDel()"
+                        class="btn_delete img_id_set1_1"
+                      >
+                        <i class="fa fa-times-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- // 시공중 -->
+
+                  <!-- 시공후 -->
+                  <div class="flex_box">
+                    <h3>시공후</h3>
+                    <select name="img_3_chk" id="img_3_chk" required>
+                      <option value="N">미검수</option>
+                      <option value="Y">검수완료</option>
+                    </select>
+                    <span
+                      >시공전 또는 시공전 + 시공중 사진을 등록하고 사진 검수
+                      완료 후 홈페이지에 노출</span
+                    >
+                  </div>
+                  <div class="input_imgs_wrap input_imgs_wrap2">
+                    <div class="input_wrap_plus" data-index="2">
+                      <figure>
+                        <img
+                          src="../img/ico_photo_plus_off.png"
+                          alt="icon_plus"
+                          onMouseOver="this.src='../img/ico_photo_plus_on.png'"
+                          onMouseOut="this.src='../img/ico_photo_plus_off.png'"
+                        />
+                      </figure>
+                      <p>이미지를 추가하세요.</p>
+                    </div>
+                    <img id="input_imgs_img3" />
+                    <div class="img_id_set img_id_set3">
+                      <div class="imgfile_box">
+                        <img
+                          src="../img/img_interior_thum.png"
+                          class="selProductFile"
+                          id="view_imgs3_1"
+                        />
+                      </div>
+                      <input
+                        type="file"
+                        name="input_imgs3[]"
+                        id="input_imgs3_1"
+                        class="input_imgs3"
+                        onchange="imgPrivewP(this,$('#view_imgs3_1'))"
+                      />
+
+                      <a
+                        href="javascript:void(0);"
+                        onclick="imgDel()"
+                        class="btn_delete img_id_set3_1"
+                      >
+                        <i class="fa fa-times-circle"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- // 시공후 -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- // table -->
+        </div>
+        <!-- // container_wr -->
+      </div>
+      <!-- // container -->
+    </div>
+    <!-- // wrapper -->
+  </body>
+</html>
